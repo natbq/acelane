@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talk with a Specialist — Ace Lane Logistics</title>
+  <meta name="description" content="We're excited to help you with your logistics needs. Fill out the form or call us immediately." />
+  <link rel="icon" type="image/png" href="img/brand/ace-lane-favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/tokens.css" />
+  <link rel="stylesheet" href="style/stylesheet.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img class="navbar-logo" src="img/brand/ace-lane-logo.svg" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary btn-nav">Talk with a Specialist</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <ul class="mobile-menu" id="mobileMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html" class="btn btn-primary">Talk with a Specialist</a></li>
+  </ul>
+
+  <!-- HERO -->
+  <section class="hero hero-contact">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-contact-grid">
+
+        <div class="hero-content">
+          <h1 class="heading-huge">Talk with a<br>specialist</h1>
+          <p class="body-text-large">We're excited to help you with your logistics needs. Please fill out the form below or call us immediately, if you prefer.</p>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011.07 3.18 2 2 0 013.07 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span class="contact-info-card-label">Call Us</span>
+          </div>
+          <p class="contact-info-card-detail">Mon–Fri from 8am to 6pm EST</p>
+          <p class="contact-info-card-value">+1 (404) 921-832</p>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card-header">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span class="contact-info-card-label">E-Mail Us</span>
+          </div>
+          <p class="contact-info-card-detail">We'll respond within 24 hours</p>
+          <p class="contact-info-card-value">sales@acelanelogistics.com</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="quick-form-section">
+    <div class="container">
+      <div class="quick-form-card">
+
+        <!-- SUCCESS MESSAGE -->
+        <div id="main-success" style="display:none; text-align:center; padding: var(--space-10) 0;">
+          <svg style="width:48px;height:48px;stroke:#2a9d8f;fill:none;stroke-width:1.5;margin:0 auto var(--space-4);" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          <p style="font-size:var(--text-2xl);font-weight:var(--weight-bold);color:var(--color-text-primary);margin-bottom:var(--space-2);">Message sent!</p>
+          <p style="color:var(--color-text-secondary);">We're excited to help you. A specialist will reach out within 24 hours.</p>
+        </div>
+
+        <!-- FORM -->
+        <form id="main-form" name="specialist-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+          <input type="hidden" name="form-name" value="specialist-request" />
+          <input type="hidden" name="bot-field" style="display:none" />
+          <div class="form-grid-2">
+            <div>
+              <label class="input-label" for="f-company">Company Name</label>
+              <input class="input" id="f-company" name="company" type="text" required />
+            </div>
+            <div>
+              <label class="input-label" for="f-email">E-Mail</label>
+              <input class="input" id="f-email" name="email" type="email" required />
+            </div>
+          </div>
+          <div class="form-grid-3">
+            <div>
+              <label class="input-label" for="f-first">First Name</label>
+              <input class="input" id="f-first" name="first-name" type="text" required />
+            </div>
+            <div>
+              <label class="input-label" for="f-last">Last Name</label>
+              <input class="input" id="f-last" name="last-name" type="text" required />
+            </div>
+            <div>
+              <label class="input-label" for="f-phone">Phone Number</label>
+              <input class="input" id="f-phone" name="phone" type="tel" />
+            </div>
+          </div>
+          <div class="form-full">
+            <label class="input-label" for="f-service">Share with us what kind of service you need</label>
+            <textarea class="textarea" id="f-service" name="service"></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit" id="main-btn">Talk with a Specialist</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img class="navbar-logo" src="img/brand/ace-lane-logo.svg" />
+          </a>
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011.07 3.18 2 2 0 013.07 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              +1 (404) 921-832
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              sales@acelanelogistics.com
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="contact.html">Talk with a specialist</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+        <p class="footer-copyright">© Copyright 2026 Ace Lane Logistics. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
+
+    // Navbar active link
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links li a').forEach(link => {
+      if (link.getAttribute('href') === currentPage) link.classList.add('active');
+    });
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+      document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Netlify form
+    function handleNetlifyForm({ formId, btnId, successId }) {
+      const form = document.getElementById(formId);
+      const btn  = document.getElementById(btnId);
+      const successEl = document.getElementById(successId);
+      if (!form) return;
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const requiredFields = form.querySelectorAll('[required]');
+        let valid = true;
+        requiredFields.forEach(field => {
+          field.style.borderColor = '';
+          if (!field.value.trim()) { field.style.borderColor = '#e8562a'; valid = false; }
+        });
+        if (!valid) {
+          btn.textContent = 'Please fill required fields';
+          setTimeout(() => btn.textContent = 'Talk with a Specialist', 2500);
+          return;
+        }
+        btn.disabled = true;
+        btn.textContent = 'Sending…';
+        try {
+          const data = new FormData(form);
+          await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() });
+          form.style.display = 'none';
+          successEl.style.display = 'block';
+        } catch(err) {
+          btn.disabled = false;
+          btn.textContent = 'Error — please try again';
+          setTimeout(() => btn.textContent = 'Talk with a Specialist', 3000);
+        }
+      });
+    }
+    handleNetlifyForm({ formId: 'main-form', btnId: 'main-btn', successId: 'main-success' });
+  </script>
+
+</body>
+</html>
