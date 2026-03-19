@@ -6,29 +6,23 @@
   <title>Ace Lane Logistics — Leading Beyond Transportation</title>
   <meta name="description" content="Performance-driven freight brokerage delivering reliable, detailed oriented logistics solutions to meet every need." />
   <link rel="icon" type="image/png" href="img/brand/ace-lane-favicon.png" />
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style/tokens.css" />
   <link rel="stylesheet" href="style/stylesheet.css" />
-  
 </head>
 <body>
 
-  <!-- =============================================
-       NAVBAR
-  ============================================= -->
+  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="logo">
-        <img class="navbar-logo" src="img/brand/ace-lane-logo.svg"
+        <img class="navbar-logo" src="img/brand/ace-lane-logo.svg" />
       </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="industries.html">Industries</a></li>
         <li><a href="about.html">About Us</a></li>
       </ul>
@@ -39,71 +33,60 @@
     </div>
   </nav>
 
-  <!-- Mobile menu -->
   <ul class="mobile-menu" id="mobileMenu">
     <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
     <li><a href="industries.html">Industries</a></li>
     <li><a href="about.html">About Us</a></li>
     <li><a href="contact.html" class="btn btn-primary">Talk with a Specialist</a></li>
   </ul>
 
-  <!-- =============================================
-       HERO
-  ============================================= -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="container">
       <div class="hero-content">
-        <h1 class="heading-huge">Leading Beyond<br>Transportation</h1>
-        <p class="body-text-large">Your freight deserves more than standard service. We are a performance-driven freight brokerage that delivers reliable, detailed oriented logistics solutions to meet every need.</p>
+        <h1 class="heading-huge all-caps">Built To Deliver<br>Excellence</h1>
+        <p class="body-text-large">At Ace Lane Logistics, we believe freight brokerage should add value, not complexity. Our mission is to simplify logistics, provide seamless transportation, and build long-term relationships backed by trust and results.</p>
       </div>
     </div>
   </section>
 
-  <!-- =============================================
-       QUICK FORM
-  ============================================= -->
+  <!-- QUICK FORM — SIMPLIFIED -->
   <section class="quick-form-section">
     <div class="container">
       <div class="quick-form-card">
-        <!-- SUCCESS MESSAGE (hidden by default) -->
-        <div id="qf-success" style="display:none; text-align:center; padding: var(--space-10) 0;">
-          <svg style="width:48px;height:48px;stroke:#2a9d8f;fill:none;stroke-width:1.5;margin:0 auto var(--space-4);" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
-          <p style="font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:var(--weight-bold);color:var(--color-text-primary);margin-bottom:var(--space-2);">Message sent!</p>
-          <p style="color:var(--color-text-secondary);">We'll get back to you within 24 hours.</p>
+        <div id="qf-success" style="display:none; text-align:center; padding: var(--space-6) 0;">
+          <svg style="width:40px;height:40px;stroke:#2a9d8f;fill:none;stroke-width:1.5;margin:0 auto var(--space-3);" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
+          <p style="font-size:var(--text-xl);font-weight:var(--weight-bold);color:var(--color-text-primary);margin-bottom:var(--space-1);">Message sent!</p>
+          <p style="color:var(--color-text-secondary);font-size:var(--text-sm);">We'll get back to you within 24 hours.</p>
         </div>
-        <!-- FORM -->
         <form id="qf-form" name="specialist-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
           <input type="hidden" name="form-name" value="specialist-request" />
           <input type="hidden" name="bot-field" style="display:none" />
-          <div class="form-grid-2">
+          <div class="form-grid-simple">
             <div>
-              <label class="input-label" for="qf-company">Company Name</label>
+              <label for="qf-name">Your Name</label>
+              <input class="input" id="qf-name" name="name" type="text" required />
+            </div>
+            <div>
+              <label for="qf-company">Company</label>
               <input class="input" id="qf-company" name="company" type="text" required />
             </div>
             <div>
-              <label class="input-label" for="qf-email">E-Mail</label>
+              <label for="qf-email">E-Mail</label>
               <input class="input" id="qf-email" name="email" type="email" required />
             </div>
-          </div>
-          <div class="form-grid-3">
             <div>
-              <label class="input-label" for="qf-first">First Name</label>
-              <input class="input" id="qf-first" name="first-name" type="text" required />
-            </div>
-            <div>
-              <label class="input-label" for="qf-last">Last Name</label>
-              <input class="input" id="qf-last" name="last-name" type="text" required />
-            </div>
-            <div>
-              <label class="input-label" for="qf-phone">Phone Number</label>
+              <label for="qf-phone">Phone Number</label>
               <input class="input" id="qf-phone" name="phone" type="tel" />
             </div>
           </div>
-          <div class="form-full">
-            <label class="input-label" for="qf-service">Share with us what kind of service you need</label>
-            <textarea class="textarea" id="qf-service" name="service"></textarea>
+          <div style="margin-top: var(--space-4);">
+            <label for="qf-comments">Comments</label>
+            <textarea rows="1" class="textarea" id="qf-comments" name="comments" ></textarea>
           </div>
+
           <div class="form-actions">
             <button class="btn btn-primary" type="submit" id="qf-btn">Talk with a Specialist</button>
           </div>
@@ -112,13 +95,171 @@
     </div>
   </section>
 
-  <!-- =============================================
-       SERVICES
-  ============================================= -->
+  <!-- THE ACE STANDARD -->
+  <section class="ace-standard-section">
+    <div class="container">
+      <div class="ace-standard-intro">
+        <h2 class="heading-3xl">The Ace Standard</h2>
+        <p>Poor communication is the most common and costly mistake in freight. Incomplete information and details that fall through the cracks can lead to delays, claims, and dissatisfied customers.<br><br>
+        Our <strong>Verified Checkpoint System</strong> is a five-stage process that closes the gap by confirming and documenting each critical detail with clear communication at every shipping stage. The result is a freight experience defined by Accountability, Clarity, and Execution (ACE).</p>
+      </div>
+
+      <div class="ace-steps-nav">
+        <button class="ace-step-btn active" data-step="quoting">
+          <div class="ace-step-icon-wrap">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><path d="M9 12h3l2-4"/></svg>
+          </div>
+          <span class="ace-step-label">Quoting</span>
+          <span class="ace-step-desc">We collect all critical shipment details upfront to match the right capacity and provide a competitive rate. No back-and-forth or delays.</span>
+        </button>
+        <button class="ace-step-btn" data-step="compliance">
+          <div class="ace-step-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <span class="ace-step-label">Carrier Compliance</span>
+          <span class="ace-step-desc">Carriers are screened through strict safety, insurance, and performance standards before being assigned to your load.</span>
+        </button>
+        <button class="ace-step-btn" data-step="pickup">
+          <div class="ace-step-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <span class="ace-step-label">Pickup</span>
+          <span class="ace-step-desc">Pickup details confirmed, appointments aligned, and driver dispatched with full instructions before wheels roll.</span>
+        </button>
+        <button class="ace-step-btn" data-step="transit">
+          <div class="ace-step-icon-wrap">
+            <svg viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <span class="ace-step-label">In Transit</span>
+          <span class="ace-step-desc">Proactive tracking and communication to address issues before they become problems — from pickup to destination.</span>
+        </button>
+        <button class="ace-step-btn" data-step="delivery">
+          <div class="ace-step-icon-wrap">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <span class="ace-step-label">Delivery</span>
+          <span class="ace-step-desc">On-time delivery, POD confirmation, and follow-up to close every load cleanly, efficiently, and without surprises.</span>
+        </button>
+      </div>
+
+      <div class="ace-step-panel active" data-panel="quoting">
+        <div class="ace-panel-left">
+          <span class="ace-panel-tag">Step 1 — Quoting</span>
+          <h3 class="ace-panel-title">We collect critical shipment details upfront to deliver the right capacity at competitive rates.</h3>
+          <p class="ace-panel-desc">No back-and-forth, no delays. Every quote is built on precise information so we can move fast and keep things accurate from the very first interaction.</p>
+          <ul class="ace-panel-list">
+            <li>Shipment details confirmed (inclusive of zip code)</li>
+            <li>Requested pickup date and delivery window or appointment</li>
+            <li>Commodity type, weight, piece count, and dimensions</li>
+            <li>Packaging type (palletized, crated, floor-loaded, loose cartons, or crated)</li>
+            <li>Special requirements (liftgate, white glove, temp control, trade show, multi-stop, etc.)</li>
+          </ul>
+        </div>
+        <div class="ace-panel-right">
+          <p class="ace-panel-right-title">Once Approved</p>
+          <ul class="ace-checklist">
+            <li>Transit time, service level and capacity secured for immediate pickup</li>
+            <li>Pickup and delivery milestones, load specs for requirements and documentation confirmed</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ace-step-panel" data-panel="compliance">
+        <div class="ace-panel-left">
+          <span class="ace-panel-tag">Step 2 — Carrier Compliance</span>
+          <h3 class="ace-panel-title">Carriers are selected through strict safety, insurance, and performance standards.</h3>
+          <p class="ace-panel-desc">We don't just find a truck — we vet every carrier to make sure they meet our compliance requirements before they ever touch your freight.</p>
+          <ul class="ace-panel-list">
+            <li>Active operating authority and DOT number verified</li>
+            <li>Insurance certificates confirmed and on file</li>
+            <li>Safety rating and CSA scores reviewed</li>
+            <li>Equipment type matched to shipment requirements</li>
+            <li>Carrier agreement and rate confirmation signed</li>
+          </ul>
+        </div>
+        <div class="ace-panel-right">
+          <p class="ace-panel-right-title">Once Approved</p>
+          <ul class="ace-checklist">
+            <li>Carrier fully vetted and assigned to your shipment</li>
+            <li>Load confirmation sent with all shipment and contact details</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ace-step-panel" data-panel="pickup">
+        <div class="ace-panel-left">
+          <span class="ace-panel-tag">Step 3 — Pickup</span>
+          <h3 class="ace-panel-title">Pickup details confirmed, appointments aligned, and driver dispatched before wheels roll.</h3>
+          <p class="ace-panel-desc">We coordinate directly with your team and the carrier to make sure everything is in place before the driver arrives — no surprises, no missed windows.</p>
+          <ul class="ace-panel-list">
+            <li>Pickup appointment confirmed with shipper</li>
+            <li>Driver dispatched with complete load instructions</li>
+            <li>Pickup number and reference details shared</li>
+            <li>BOL and paperwork requirements communicated</li>
+            <li>Load confirmed picked up with check call</li>
+          </ul>
+        </div>
+        <div class="ace-panel-right">
+          <p class="ace-panel-right-title">Once Approved</p>
+          <ul class="ace-checklist">
+            <li>Pickup confirmed with timestamp and piece count</li>
+            <li>Shipment officially in transit, tracking initiated</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ace-step-panel" data-panel="transit">
+        <div class="ace-panel-left">
+          <span class="ace-panel-tag">Step 4 — In Transit</span>
+          <h3 class="ace-panel-title">Proactive tracking and communication to address issues before they become problems.</h3>
+          <p class="ace-panel-desc">We stay on top of your freight so you don't have to. Real-time visibility and check calls keep everyone aligned from pickup to delivery.</p>
+          <ul class="ace-panel-list">
+            <li>Regular check calls with driver throughout transit</li>
+            <li>Proactive ETA updates shared with consignee</li>
+            <li>Delays or exceptions communicated immediately</li>
+            <li>Appointment reconfirmed if schedule changes</li>
+            <li>Any claims or damage escalated and documented in real time</li>
+          </ul>
+        </div>
+        <div class="ace-panel-right">
+          <p class="ace-panel-right-title">Once Approved</p>
+          <ul class="ace-checklist">
+            <li>Freight confirmed on schedule and on track</li>
+            <li>Delivery appointment locked and consignee notified</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ace-step-panel" data-panel="delivery">
+        <div class="ace-panel-left">
+          <span class="ace-panel-tag">Step 5 — Delivery</span>
+          <h3 class="ace-panel-title">On-time delivery, POD confirmation, and follow-up to close every load cleanly and efficiently.</h3>
+          <p class="ace-panel-desc">The job isn't done until the paperwork is. We confirm delivery, collect proof of delivery, and follow up to make sure everything went as planned.</p>
+          <ul class="ace-panel-list">
+            <li>Delivery confirmed with driver check call</li>
+            <li>Proof of delivery (POD) collected and filed</li>
+            <li>Any exceptions, shortages, or damages documented</li>
+            <li>Final invoice issued with all supporting documents</li>
+            <li>Customer follow-up to confirm satisfaction</li>
+          </ul>
+        </div>
+        <div class="ace-panel-right">
+          <p class="ace-panel-right-title">Once Approved</p>
+          <ul class="ace-checklist">
+            <li>POD signed and on file — load officially closed</li>
+            <li>Full audit trail available for any claims or disputes</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
   <section class="services-section">
     <div class="container">
       <div class="section-header">
-        <h2 class="heading-3xl">Services we provide</h2>
+        <h2 class="heading-3xl">Our Services</h2>
         <p class="section-subtitle">Our services are backed by expertise, the right capacity, and 24/7-365 support.</p>
       </div>
       <div class="services-layout">
@@ -135,9 +276,7 @@
           <li data-service="intermodal">Intermodal</li>
         </ul>
         <div class="services-panel" id="servicePanel">
-          <div class="service-icon">
-            <img src="img/icons/truck.svg">
-          </div>
+          <div class="service-icon"><img src="img/icons/truck.svg"></div>
           <h3 class="service-panel-title">Full Truckload (FTL)</h3>
           <p class="service-panel-desc">Dedicated full truck capacity for your shipment. Ideal for large loads that can fill an entire trailer, offering faster transit and reduced handling.</p>
           <ul class="service-panel-list">
@@ -151,7 +290,7 @@
     </div>
   </section>
 
-  <!-- =============================================
+    <!-- =============================================
        STANDARDS
   ============================================= -->
   <section class="standards-section">
@@ -325,30 +464,67 @@
     </div>
   </footer>
 
-  <!-- =============================================
-       JAVASCRIPT
-  ============================================= -->
-  <script>
-    // --- Navbar scroll effect ---
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img class="navbar-logo" src="img/brand/ace-lane-logo.svg" />
+          </a>
+          <div class="footer-contact">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011.07 3.18 2 2 0 013.07 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              +1 (404) 921-832
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8bf8eae7eef8cbeae8eee7eae5eee7e4ece2f8ffe2e8f8a5e8e4e6">[email&#160;protected]</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="industries.html">Industries</a></li>
+            <li><a href="contact.html">Talk with a specialist</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Customers</p>
+          <ul class="footer-links">
+            <li><a href="industries.html#food">Food &amp; Beverage</a></li>
+            <li><a href="industries.html#construction">Construction</a></li>
+            <li><a href="industries.html#manufacturing">Manufacturing</a></li>
+            <li><a href="industries.html#tradeshow">Tradeshows</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+        <p class="footer-copyright">© Copyright 2026 Ace Lane Logistics. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // Navbar scroll
     const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
+    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 40));
+
+    // Navbar active link
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links li a').forEach(link => {
+      if (link.getAttribute('href') === currentPage) link.classList.add('active');
     });
 
-        // --- Navbar link active ---
-
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        document.querySelectorAll('.nav-links li a').forEach(link => {
-          if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-          }
-        });
-
-    // --- Hamburger menu ---
+    // Hamburger
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     hamburger.addEventListener('click', () => {
@@ -364,33 +540,38 @@
       });
     });
 
-    // --- Services tab ---
-    const serviceData = {
-      ftl:        { title: 'Full Truckload (FTL)',        icon:'img/icons/truck.svg',      desc: 'Dedicated full truck capacity for your shipment. Ideal for large loads that can fill an entire trailer, offering faster transit and reduced handling.',            items: ['Direct point-to-point delivery', 'Reduced risk of damage', 'Faster transit times', 'Cost-effective for large volumes'] },
-      ltl:        { title: 'Less-Than-Truckload (LTL)',   icon:'img/icons/LTL.svg',      desc: 'Share trailer space with other shippers for smaller loads. A cost-effective solution when you don\'t need a full truck.',                                         items: ['Pay only for space used', 'Ideal for 150–15,000 lbs', 'Multiple pickups & deliveries', 'Flexible scheduling'] },
-      flatbed:    { title: 'Flatbed',                     icon:'img/icons/flatbed.svg',    desc: 'Open-deck trailers for oversized, heavy, or oddly-shaped freight that can\'t be enclosed in a standard trailer.',                                                  items: ['Oversized & heavy loads', 'Construction materials', 'Industrial equipment', 'No size restrictions'] },
-      temp:       { title: 'Temperature Controlled',      icon:'img/icons/temperature.svg',      desc: 'Refrigerated and climate-controlled trailers to keep your perishable freight at the right temperature throughout the journey.',                                   items: ['Frozen & refrigerated cargo', 'Pharmaceutical products', '24/7 temperature monitoring', 'Compliance with food safety standards'] },
-      produce:    { title: 'Produce',                     icon:'img/icons/produce.svg',      desc: 'Specialized transportation for fresh fruits, vegetables, and other perishable goods with time-sensitive delivery requirements.',                                  items: ['Fresh produce expertise', 'Rapid transit routes', 'Temperature-sensitive handling', 'Harvest-season capacity'] },
-      warehousing:{ title: 'Warehousing',                 icon:'img/icons/warehouse.svg',      desc: 'Short and long-term storage solutions with inventory management, cross-docking, and distribution services.',                                                      items: ['Short & long-term storage', 'Inventory management', 'Cross-docking available', 'Strategic locations'] },
-      expedited:  { title: 'Expedited',                   icon:'img/icons/van.svg',        desc: 'Time-critical shipments that need to move fast. Our expedited service guarantees the fastest possible transit with dedicated resources.',                        items: ['Same-day & next-day options', 'Dedicated drivers', 'Real-time tracking', 'Priority handling'] },
-      drayage:    { title: 'Drayage',                     icon:'img/icons/truck.svg',      desc: 'Port and rail yard container movement services connecting intermodal hubs to your warehouse or final destination efficiently.',                                   items: ['Port drayage', 'Rail yard pickup', 'Container repositioning', 'Customs coordination'] },
-      heavy:      { title: 'Heavy Haul',                  icon:'img/icons/truck.svg',      desc: 'Transportation of oversized and overweight loads requiring special permits, route surveys, and escort vehicles.',                                                  items: ['Super loads & heavy equipment', 'Permit acquisition', 'Route surveys', 'Pilot car coordination'] },
-      intermodal: { title: 'Intermodal',                  icon:'img/icons/truck.svg',      desc: 'Combining rail and truck transportation to optimize cost, capacity, and sustainability for long-haul freight.',                                                  items: ['Rail + truck combination', 'Cost savings vs OTR', 'Reduced carbon footprint', 'Nationwide coverage'] },
-    };
+    // Ace Standard steps
+    document.querySelectorAll('.ace-step-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.ace-step-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.ace-step-panel').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.querySelector(`.ace-step-panel[data-panel="${btn.dataset.step}"]`).classList.add('active');
+      });
+    });
 
+    // Services tab
+    const serviceData = {
+      ftl:        { title: 'Full Truckload (FTL)',        icon:'img/icons/truck.svg',       desc: 'Dedicated full truck capacity for your shipment. Ideal for large loads that can fill an entire trailer, offering faster transit and reduced handling.',   items: ['Direct point-to-point delivery', 'Reduced risk of damage', 'Faster transit times', 'Cost-effective for large volumes'] },
+      ltl:        { title: 'Less-Than-Truckload (LTL)',   icon:'img/icons/LTL.svg',         desc: 'Share trailer space with other shippers for smaller loads. A cost-effective solution when you don\'t need a full truck.',                                items: ['Pay only for space used', 'Ideal for 150–15,000 lbs', 'Multiple pickups & deliveries', 'Flexible scheduling'] },
+      flatbed:    { title: 'Flatbed',                     icon:'img/icons/flatbed.svg',     desc: 'Open-deck trailers for oversized, heavy, or oddly-shaped freight that can\'t be enclosed in a standard trailer.',                                       items: ['Oversized & heavy loads', 'Construction materials', 'Industrial equipment', 'No size restrictions'] },
+      temp:       { title: 'Temperature Controlled',      icon:'img/icons/temperature.svg', desc: 'Refrigerated and climate-controlled trailers to keep your perishable freight at the right temperature throughout the journey.',                        items: ['Frozen & refrigerated cargo', 'Pharmaceutical products', '24/7 temperature monitoring', 'Compliance with food safety standards'] },
+      produce:    { title: 'Produce',                     icon:'img/icons/produce.svg',     desc: 'Specialized transportation for fresh fruits, vegetables, and other perishable goods with time-sensitive delivery requirements.',                       items: ['Fresh produce expertise', 'Rapid transit routes', 'Temperature-sensitive handling', 'Harvest-season capacity'] },
+      warehousing:{ title: 'Warehousing',                 icon:'img/icons/warehouse.svg',   desc: 'Short and long-term storage solutions with inventory management, cross-docking, and distribution services.',                                           items: ['Short & long-term storage', 'Inventory management', 'Cross-docking available', 'Strategic locations'] },
+      expedited:  { title: 'Expedited',                   icon:'img/icons/van.svg',         desc: 'Time-critical shipments that need to move fast. Our expedited service guarantees the fastest possible transit with dedicated resources.',               items: ['Same-day & next-day options', 'Dedicated drivers', 'Real-time tracking', 'Priority handling'] },
+      drayage:    { title: 'Drayage',                     icon:'img/icons/truck.svg',       desc: 'Port and rail yard container movement services connecting intermodal hubs to your warehouse or final destination efficiently.',                        items: ['Port drayage', 'Rail yard pickup', 'Container repositioning', 'Customs coordination'] },
+      heavy:      { title: 'Heavy Haul',                  icon:'img/icons/truck.svg',       desc: 'Transportation of oversized and overweight loads requiring special permits, route surveys, and escort vehicles.',                                       items: ['Super loads & heavy equipment', 'Permit acquisition', 'Route surveys', 'Pilot car coordination'] },
+      intermodal: { title: 'Intermodal',                  icon:'img/icons/truck.svg',       desc: 'Combining rail and truck transportation to optimize cost, capacity, and sustainability for long-haul freight.',                                        items: ['Rail + truck combination', 'Cost savings vs OTR', 'Reduced carbon footprint', 'Nationwide coverage'] },
+    };
     const servicesList = document.getElementById('servicesList');
     const servicePanel = document.getElementById('servicePanel');
-
     servicesList.querySelectorAll('li').forEach(li => {
       li.addEventListener('click', () => {
         servicesList.querySelectorAll('li').forEach(el => el.classList.remove('active'));
         li.classList.add('active');
-        const key = li.dataset.service;
-        const data = serviceData[key];
+        const data = serviceData[li.dataset.service];
         servicePanel.innerHTML = `
-          <div class="service-icon">
-            <img src="${data.icon}">
-          </div>
+          <div class="service-icon"><img src="${data.icon}"></div>
           <h3 class="service-panel-title">${data.title}</h3>
           <p class="service-panel-desc">${data.desc}</p>
           <ul class="service-panel-list">${data.items.map(i => `<li>${i}</li>`).join('')}</ul>
@@ -398,55 +579,39 @@
       });
     });
 
-    // --- Netlify Forms handler (shared utility) ---
-    function handleNetlifyForm({ formId, btnId, successId, isCtaStyle }) {
+    // Netlify Forms
+    function handleNetlifyForm({ formId, btnId, successId, label }) {
       const form = document.getElementById(formId);
       const btn  = document.getElementById(btnId);
       const successEl = document.getElementById(successId);
       if (!form) return;
-
       form.addEventListener('submit', async function(e) {
         e.preventDefault();
-
-        // Basic validation: check required fields
-        const requiredFields = form.querySelectorAll('[required]');
         let valid = true;
-        requiredFields.forEach(field => {
-          field.style.borderColor = '';
-          if (!field.value.trim()) {
-            field.style.borderColor = '#e8562a';
-            valid = false;
-          }
+        form.querySelectorAll('[required]').forEach(f => {
+          f.style.borderColor = '';
+          if (!f.value.trim()) { f.style.borderColor = '#F5744D'; valid = false; }
         });
         if (!valid) {
           btn.textContent = 'Please fill required fields';
-          setTimeout(() => btn.textContent = isCtaStyle ? 'Submit' : 'Talk with a Specialist', 2500);
+          setTimeout(() => btn.textContent = label, 2500);
           return;
         }
-
         btn.disabled = true;
         btn.textContent = 'Sending…';
-
         try {
-          const data = new FormData(form);
-          await fetch('/', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: new URLSearchParams(data).toString()
-          });
-          // Show success, hide form
+          await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() });
           form.style.display = 'none';
           successEl.style.display = 'block';
-        } catch (err) {
+        } catch {
           btn.disabled = false;
           btn.textContent = 'Error — please try again';
-          setTimeout(() => btn.textContent = isCtaStyle ? 'Submit' : 'Talk with a Specialist', 3000);
+          setTimeout(() => btn.textContent = label, 3000);
         }
       });
     }
-
-    handleNetlifyForm({ formId: 'qf-form', btnId: 'qf-btn', successId: 'qf-success', isCtaStyle: false });
-    handleNetlifyForm({ formId: 'cf-form', btnId: 'cf-btn', successId: 'cf-success', isCtaStyle: true });
+    handleNetlifyForm({ formId: 'qf-form', btnId: 'qf-btn', successId: 'qf-success', label: 'Talk with a Specialist' });
   </script>
+
 </body>
 </html>

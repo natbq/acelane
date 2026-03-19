@@ -52,6 +52,7 @@
   --weight-medium:  500;
   --weight-semibold:600;
   --weight-bold:    700;
+  --weight-extrabold:    800;
 
   /* Line-height */
   --leading-tight:  1.1;
@@ -175,6 +176,10 @@ a {
   color: var(--color-white);
 }
 
+.all-caps {
+  text-transform: uppercase;
+}
+
 /* ----------------------------
    CONTAINER
    ---------------------------- */
@@ -232,7 +237,6 @@ a {
 
 .textarea {
   resize: vertical;
-  min-height: 100px;
 }
 
 label {
@@ -281,7 +285,7 @@ section {
    ---------------------------- */
 .heading-huge {
   font-size: var(--text-5xl);
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-extrabold);
   line-height: var(--leading-tight);
   color: var(--color-text-light);
 }

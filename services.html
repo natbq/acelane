@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us — Ace Lane Logistics</title>
-  <meta name="description" content="With over 10 years of industry experience, Ace Lane goes beyond simply booking freight." />
+  <title>Ace Lane Logistics — Leading Beyond Transportation</title>
+  <meta name="description" content="Performance-driven freight brokerage delivering reliable, detailed oriented logistics solutions to meet every need." />
   <link rel="icon" type="image/png" href="img/brand/ace-lane-favicon.png" />
-
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,11 +15,13 @@
   <!-- CSS -->
   <link rel="stylesheet" href="style/tokens.css" />
   <link rel="stylesheet" href="style/stylesheet.css" />
-
+  
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- =============================================
+       NAVBAR
+  ============================================= -->
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="logo">
@@ -32,32 +33,75 @@
         <li><a href="industries.html">Industries</a></li>
         <li><a href="about.html">About Us</a></li>
       </ul>
-      <a href="contact.html" class="btn btn-primary">Talk with a Specialist</a>
+      <a href="contact.html" class="btn btn-primary btn-nav">Talk with a Specialist</a>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
+  <!-- Mobile menu -->
   <ul class="mobile-menu" id="mobileMenu">
     <li><a href="index.html">Home</a></li>
-    <li><a href="industries.html">Our Customers</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="industries.html">Industries</a></li>
     <li><a href="about.html">About Us</a></li>
-    <li><a href="contact.html" class="btn-nav">Talk with a Specialist</a></li>
+    <li><a href="contact.html" class="btn btn-primary">Talk with a Specialist</a></li>
   </ul>
 
-  <!-- HERO -->
-  <section class="hero hero-about">
+  <!-- =============================================
+       HERO
+  ============================================= -->
+  <section class="hero">
     <div class="hero-bg"></div>
     <div class="container">
-      <div class="hero-content" style="max-width: 560px;">
-        <h1 class="heading-huge">Your A-Team<br>Freight Experts</h1>
-        <p class="body-text-large">With over 10 years of industry experience, we go beyond simply booking freight. Our approach combines brokerage expertise with consulting insight to create efficient, customer-focused solutions tailored to your business needs.</p>
+      <div class="hero-content">
+        <h1 class="heading-huge all-caps">Our Services</h1>
+        <p class="body-text-large">At Ace Lane Logistics, we believe freight brokerage should add value, not complexity. Our mission is to simplify logistics, provide seamless transportation, and build long-term relationships backed by trust and results.</p>
       </div>
     </div>
   </section>
 
- <!-- =============================================
+  <!-- =============================================
+       SERVICES
+  ============================================= -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="heading-3xl">Services we provide</h2>
+        <p class="section-subtitle">Our services are backed by expertise, the right capacity, and 24/7-365 support.</p>
+      </div>
+      <div class="services-layout">
+        <ul class="services-list" id="servicesList">
+          <li class="active" data-service="ftl">Full Truckload (FTL)</li>
+          <li data-service="ltl">Less-Than-Truckload (LTL)</li>
+          <li data-service="flatbed">Flatbed</li>
+          <li data-service="temp">Temperature Controlled</li>
+          <li data-service="produce">Produce</li>
+          <li data-service="warehousing">Warehousing</li>
+          <li data-service="expedited">Expedited</li>
+          <li data-service="drayage">Drayage</li>
+          <li data-service="heavy">Heavy Haul</li>
+          <li data-service="intermodal">Intermodal</li>
+        </ul>
+        <div class="services-panel" id="servicePanel">
+          <div class="service-icon">
+            <img src="img/icons/truck.svg">
+          </div>
+          <h3 class="service-panel-title">Full Truckload (FTL)</h3>
+          <p class="service-panel-desc">Dedicated full truck capacity for your shipment. Ideal for large loads that can fill an entire trailer, offering faster transit and reduced handling.</p>
+          <ul class="service-panel-list">
+            <li>Direct point-to-point delivery</li>
+            <li>Reduced risk of damage</li>
+            <li>Faster transit times</li>
+            <li>Cost-effective for large volumes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
        STANDARDS
   ============================================= -->
   <section class="standards-section">
@@ -105,37 +149,6 @@
     </div>
   </section>
 
-  <!-- TEAM -->
-  <section class="team-section">
-    <div class="container">
-      <h2 class="heading-3xl">Who are behind Ace Lane</h2>
-      <p class="section-subtitle">Our services are backed by expertise, the right capacity, and 24/7-365 support.</p>
-      <div class="team-grid">
-        <div class="team-card">
-          <img class="team-photo" src="img/rafael-oliveira-ace-lane.jpg" alt="Rafael Oliveira" />
-          <div>
-            <p class="team-name">Rafael Oliveira</p>
-            <p class="team-role">Managing Director</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <img class="team-photo" src="img/natalia-queiroz-ace-lane.png" alt="Natália Queiroz" />
-          <div>
-            <p class="team-name">Natália Queiroz</p>
-            <p class="team-role">HR Director</p>
-          </div>
-        </div>
-        <div class="team-card">
-          <img class="team-photo" src="img/geovana-oliveira-ace-lane.jpg" alt="Geovana Oliveira" />
-          <div>
-            <p class="team-name">Geovana Oliveira</p>
-            <p class="team-role">Account Manager</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- =============================================
        PARTNERS
   ============================================= -->
@@ -152,7 +165,7 @@
     </div>
   </section>
 
-<!-- =============================================
+  <!-- =============================================
        CTA — TALK WITH SPECIALIST
   ============================================= -->
   <section class="cta-section" id="contact">
@@ -262,9 +275,30 @@
     </div>
   </footer>
 
+  <!-- =============================================
+       JAVASCRIPT
+  ============================================= -->
   <script>
+    // --- Navbar scroll effect ---
     const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 40));
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+        // --- Navbar link active ---
+
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.nav-links li a').forEach(link => {
+          if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+          }
+        });
+
+    // --- Hamburger menu ---
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
     hamburger.addEventListener('click', () => {
@@ -272,52 +306,96 @@
       mobileMenu.classList.toggle('open');
       document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
     });
-    mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
-      hamburger.classList.remove('open'); mobileMenu.classList.remove('open'); document.body.style.overflow = '';
-    }));
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
 
-    // --- Navbar link active ---
+    // --- Services tab ---
+    const serviceData = {
+      ftl:        { title: 'Full Truckload (FTL)',        icon:'img/icons/truck.svg',      desc: 'Dedicated full truck capacity for your shipment. Ideal for large loads that can fill an entire trailer, offering faster transit and reduced handling.',            items: ['Direct point-to-point delivery', 'Reduced risk of damage', 'Faster transit times', 'Cost-effective for large volumes'] },
+      ltl:        { title: 'Less-Than-Truckload (LTL)',   icon:'img/icons/LTL.svg',      desc: 'Share trailer space with other shippers for smaller loads. A cost-effective solution when you don\'t need a full truck.',                                         items: ['Pay only for space used', 'Ideal for 150–15,000 lbs', 'Multiple pickups & deliveries', 'Flexible scheduling'] },
+      flatbed:    { title: 'Flatbed',                     icon:'img/icons/flatbed.svg',    desc: 'Open-deck trailers for oversized, heavy, or oddly-shaped freight that can\'t be enclosed in a standard trailer.',                                                  items: ['Oversized & heavy loads', 'Construction materials', 'Industrial equipment', 'No size restrictions'] },
+      temp:       { title: 'Temperature Controlled',      icon:'img/icons/temperature.svg',      desc: 'Refrigerated and climate-controlled trailers to keep your perishable freight at the right temperature throughout the journey.',                                   items: ['Frozen & refrigerated cargo', 'Pharmaceutical products', '24/7 temperature monitoring', 'Compliance with food safety standards'] },
+      produce:    { title: 'Produce',                     icon:'img/icons/produce.svg',      desc: 'Specialized transportation for fresh fruits, vegetables, and other perishable goods with time-sensitive delivery requirements.',                                  items: ['Fresh produce expertise', 'Rapid transit routes', 'Temperature-sensitive handling', 'Harvest-season capacity'] },
+      warehousing:{ title: 'Warehousing',                 icon:'img/icons/warehouse.svg',      desc: 'Short and long-term storage solutions with inventory management, cross-docking, and distribution services.',                                                      items: ['Short & long-term storage', 'Inventory management', 'Cross-docking available', 'Strategic locations'] },
+      expedited:  { title: 'Expedited',                   icon:'img/icons/van.svg',        desc: 'Time-critical shipments that need to move fast. Our expedited service guarantees the fastest possible transit with dedicated resources.',                        items: ['Same-day & next-day options', 'Dedicated drivers', 'Real-time tracking', 'Priority handling'] },
+      drayage:    { title: 'Drayage',                     icon:'img/icons/truck.svg',      desc: 'Port and rail yard container movement services connecting intermodal hubs to your warehouse or final destination efficiently.',                                   items: ['Port drayage', 'Rail yard pickup', 'Container repositioning', 'Customs coordination'] },
+      heavy:      { title: 'Heavy Haul',                  icon:'img/icons/truck.svg',      desc: 'Transportation of oversized and overweight loads requiring special permits, route surveys, and escort vehicles.',                                                  items: ['Super loads & heavy equipment', 'Permit acquisition', 'Route surveys', 'Pilot car coordination'] },
+      intermodal: { title: 'Intermodal',                  icon:'img/icons/truck.svg',      desc: 'Combining rail and truck transportation to optimize cost, capacity, and sustainability for long-haul freight.',                                                  items: ['Rail + truck combination', 'Cost savings vs OTR', 'Reduced carbon footprint', 'Nationwide coverage'] },
+    };
 
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-        document.querySelectorAll('.nav-links li a').forEach(link => {
-          if (link.getAttribute('href') === currentPage) {
-            link.classList.add('active');
-          }
-        });
+    const servicesList = document.getElementById('servicesList');
+    const servicePanel = document.getElementById('servicePanel');
 
+    servicesList.querySelectorAll('li').forEach(li => {
+      li.addEventListener('click', () => {
+        servicesList.querySelectorAll('li').forEach(el => el.classList.remove('active'));
+        li.classList.add('active');
+        const key = li.dataset.service;
+        const data = serviceData[key];
+        servicePanel.innerHTML = `
+          <div class="service-icon">
+            <img src="${data.icon}">
+          </div>
+          <h3 class="service-panel-title">${data.title}</h3>
+          <p class="service-panel-desc">${data.desc}</p>
+          <ul class="service-panel-list">${data.items.map(i => `<li>${i}</li>`).join('')}</ul>
+        `;
+      });
+    });
 
+    // --- Netlify Forms handler (shared utility) ---
     function handleNetlifyForm({ formId, btnId, successId, isCtaStyle }) {
       const form = document.getElementById(formId);
       const btn  = document.getElementById(btnId);
       const successEl = document.getElementById(successId);
       if (!form) return;
+
       form.addEventListener('submit', async function(e) {
         e.preventDefault();
+
+        // Basic validation: check required fields
         const requiredFields = form.querySelectorAll('[required]');
         let valid = true;
         requiredFields.forEach(field => {
           field.style.borderColor = '';
-          if (!field.value.trim()) { field.style.borderColor = '#e8562a'; valid = false; }
+          if (!field.value.trim()) {
+            field.style.borderColor = '#e8562a';
+            valid = false;
+          }
         });
         if (!valid) {
           btn.textContent = 'Please fill required fields';
           setTimeout(() => btn.textContent = isCtaStyle ? 'Submit' : 'Talk with a Specialist', 2500);
           return;
         }
+
         btn.disabled = true;
         btn.textContent = 'Sending…';
+
         try {
           const data = new FormData(form);
-          await fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() });
+          await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(data).toString()
+          });
+          // Show success, hide form
           form.style.display = 'none';
           successEl.style.display = 'block';
-        } catch(err) {
+        } catch (err) {
           btn.disabled = false;
           btn.textContent = 'Error — please try again';
           setTimeout(() => btn.textContent = isCtaStyle ? 'Submit' : 'Talk with a Specialist', 3000);
         }
       });
     }
+
+    handleNetlifyForm({ formId: 'qf-form', btnId: 'qf-btn', successId: 'qf-success', isCtaStyle: false });
     handleNetlifyForm({ formId: 'cf-form', btnId: 'cf-btn', successId: 'cf-success', isCtaStyle: true });
   </script>
 </body>
