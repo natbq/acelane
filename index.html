@@ -20,13 +20,15 @@
       <a href="index.html" class="logo">
         <img class="navbar-logo" src="img/brand/ace-lane-logo.svg" />
       </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="industries.html">Industries</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-      <a href="contact.html" class="btn btn-primary btn-nav">Talk with a Specialist</a>
+      <div class="navbar-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary btn-nav">Talk with a Specialist</a>
+      </div>
       <button class="hamburger" id="hamburger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -59,16 +61,22 @@
         <div id="qf-success" style="display:none; text-align:center; padding: var(--space-6) 0;">
           <svg style="width:40px;height:40px;stroke:#2a9d8f;fill:none;stroke-width:1.5;margin:0 auto var(--space-3);" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
           <p style="font-size:var(--text-xl);font-weight:var(--weight-bold);color:var(--color-text-primary);margin-bottom:var(--space-1);">Message sent!</p>
-          <p style="color:var(--color-text-secondary);font-size:var(--text-sm);">We'll get back to you within 24 hours.</p>
+          <p style="color:var(--color-text-secondary);font-size:var(--text-sm);">We're reviewing your information and will get back to you as soon as possible.</p>
         </div>
         <form id="qf-form" name="specialist-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
           <input type="hidden" name="form-name" value="specialist-request" />
           <input type="hidden" name="bot-field" style="display:none" />
-          <div class="form-grid-simple">
+          <div class="form-grid-2">
             <div>
-              <label for="qf-name">Your Name</label>
-              <input class="input" id="qf-name" name="name" type="text" required />
+              <label for="qf-name">Name</label>
+              <input class="input" id="qf-name" name="first-name" type="text" required />
             </div>
+            <div>
+              <label for="qf-phone">Phone Number</label>
+              <input class="input" id="qf-phone" name="phone" type="tel" />
+            </div>
+          </div>
+          <div class="form-grid-2">
             <div>
               <label for="qf-company">Company</label>
               <input class="input" id="qf-company" name="company" type="text" required />
@@ -77,14 +85,10 @@
               <label for="qf-email">E-Mail</label>
               <input class="input" id="qf-email" name="email" type="email" required />
             </div>
-            <div>
-              <label for="qf-phone">Phone Number</label>
-              <input class="input" id="qf-phone" name="phone" type="tel" />
-            </div>
           </div>
           <div style="margin-top: var(--space-4);">
-            <label for="qf-comments">Comments</label>
-            <textarea rows="1" class="textarea" id="qf-comments" name="comments" ></textarea>
+            <label for="qf-comments">Additional Information: </label>
+            <textarea rows="2" class="textarea" id="qf-comments" name="comments" ></textarea>
           </div>
 
           <div class="form-actions">
@@ -100,42 +104,42 @@
     <div class="container">
       <div class="ace-standard-intro">
         <h2 class="heading-3xl">The Ace Standard</h2>
-        <p>Poor communication is the most common and costly mistake in freight. Incomplete information and details that fall through the cracks can lead to delays, claims, and dissatisfied customers.<br><br>
-        Our <strong>Verified Checkpoint System</strong> is a five-stage process that closes the gap by confirming and documenting each critical detail with clear communication at every shipping stage. The result is a freight experience defined by Accountability, Clarity, and Execution (ACE).</p>
+        <p class="section-subtitle">Poor communication is the most common and costly mistake in freight. Incomplete information and details that fall through the cracks can lead to delays, claims, and dissatisfied customers.<br><br>
+        Our <strong class="highlight">Verified Checkpoint System</strong> is a five-stage process that closes the gap by confirming and documenting each critical detail with clear communication at every shipping stage. The result is a freight experience defined by Accountability, Clarity, and Execution (ACE).</p>
       </div>
 
       <div class="ace-steps-nav">
         <button class="ace-step-btn active" data-step="quoting">
           <div class="ace-step-icon-wrap">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><path d="M9 12h3l2-4"/></svg>
+            <img src="img/icons/quoting.svg" alt="Quoting">
           </div>
           <span class="ace-step-label">Quoting</span>
           <span class="ace-step-desc">We collect all critical shipment details upfront to match the right capacity and provide a competitive rate. No back-and-forth or delays.</span>
         </button>
         <button class="ace-step-btn" data-step="compliance">
           <div class="ace-step-icon-wrap">
-            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <img src="img/icons/carrier-compliance.svg" alt="Compliance">
           </div>
           <span class="ace-step-label">Carrier Compliance</span>
-          <span class="ace-step-desc">Carriers are screened through strict safety, insurance, and performance standards before being assigned to your load.</span>
+          <span class="ace-step-desc">Cargo theft and carrier fraud are real risks in freight. We assign only fully vetted carriers to every load, no exceptions.</span>
         </button>
         <button class="ace-step-btn" data-step="pickup">
           <div class="ace-step-icon-wrap">
-            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <img src="img/icons/pickup.svg" alt="Pickup">
           </div>
           <span class="ace-step-label">Pickup</span>
           <span class="ace-step-desc">Pickup details confirmed, appointments aligned, and driver dispatched with full instructions before wheels roll.</span>
         </button>
         <button class="ace-step-btn" data-step="transit">
           <div class="ace-step-icon-wrap">
-            <svg viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <img src="img/icons/in-transit.svg" alt="Transit">
           </div>
           <span class="ace-step-label">In Transit</span>
           <span class="ace-step-desc">Proactive tracking and communication to address issues before they become problems — from pickup to destination.</span>
         </button>
         <button class="ace-step-btn" data-step="delivery">
           <div class="ace-step-icon-wrap">
-            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            <img src="img/icons/delivery.svg" alt="Delivery">
           </div>
           <span class="ace-step-label">Delivery</span>
           <span class="ace-step-desc">On-time delivery, POD confirmation, and follow-up to close every load cleanly, efficiently, and without surprises.</span>
@@ -143,46 +147,57 @@
       </div>
 
       <div class="ace-step-panel active" data-panel="quoting">
-        <div class="ace-panel-left">
-          <span class="ace-panel-tag">Step 1 — Quoting</span>
-          <h3 class="ace-panel-title">We collect critical shipment details upfront to deliver the right capacity at competitive rates.</h3>
-          <p class="ace-panel-desc">No back-and-forth, no delays. Every quote is built on precise information so we can move fast and keep things accurate from the very first interaction.</p>
-          <ul class="ace-panel-list">
-            <li>Shipment details confirmed (inclusive of zip code)</li>
-            <li>Requested pickup date and delivery window or appointment</li>
-            <li>Commodity type, weight, piece count, and dimensions</li>
-            <li>Packaging type (palletized, crated, floor-loaded, loose cartons, or crated)</li>
-            <li>Special requirements (liftgate, white glove, temp control, trade show, multi-stop, etc.)</li>
-          </ul>
+        <span class="ace-panel-tag">Step 1 — Quoting</span>
+        <div class="grid-2">
+          <div>
+            <ul class="ace-panel-list">
+              <h3 class="ace-panel-list-title">We collect the following shipment details:</h3>
+              <li>Pickup and delivery locations (city/state or zip code)</li>
+              <li>Requested pickup date and delivery window or appointment</li>
+              <li>Commodity type, weight, piece count, and dimensions</li>
+              <li>Packaging type (palletized, crated, floor-loaded, loose cartons, or carts)</li>
+              <li>Special requirements (liftgate, white glove, temp control, trade show, multi-stop, etc.)</li>
+            </ul>
+           </div>
+          <div>
+            <ul class="ace-panel-list">
+              <h3 class="ace-panel-list-title">Once approved:</h3>
+              <li>Transit time, service level and capacity secured for immediate pickup</li>
+              <li>Pickup and delivery references, load-specific requirements and documentation confirmed</li>
+            </ul>
+          </div>
         </div>
-        <div class="ace-panel-right">
-          <p class="ace-panel-right-title">Once Approved</p>
-          <ul class="ace-checklist">
-            <li>Transit time, service level and capacity secured for immediate pickup</li>
-            <li>Pickup and delivery milestones, load specs for requirements and documentation confirmed</li>
-          </ul>
+
+        <div class="card black-card">
+          <b class="body-text-large">The details collected at this stage make all the difference, eliminating wasted time and keeping every shipment on schedule.</b>
         </div>
       </div>
 
       <div class="ace-step-panel" data-panel="compliance">
-        <div class="ace-panel-left">
-          <span class="ace-panel-tag">Step 2 — Carrier Compliance</span>
-          <h3 class="ace-panel-title">Carriers are selected through strict safety, insurance, and performance standards.</h3>
-          <p class="ace-panel-desc">We don't just find a truck — we vet every carrier to make sure they meet our compliance requirements before they ever touch your freight.</p>
-          <ul class="ace-panel-list">
-            <li>Active operating authority and DOT number verified</li>
-            <li>Insurance certificates confirmed and on file</li>
-            <li>Safety rating and CSA scores reviewed</li>
-            <li>Equipment type matched to shipment requirements</li>
-            <li>Carrier agreement and rate confirmation signed</li>
-          </ul>
+        <span class="ace-panel-tag">Step 2 — Carrier Compliance</span>
+        <h3 class="ace-panel-title">Our network of qualified carriers covers North America, all tracked and managed from pickup to delivery.</h3>
+        <div class="grid-2">
+          <div>
+            <ul class="ace-panel-list">
+              <h3 class="ace-panel-list-title">Carrier Verification:</h3>
+              <li>Active operating authority (MC/DOT) confirmed, minimum 12 months in operation</li>
+              <li>Cargo and liability insurance validated directly with provider, $100k minimum up to $250k cargo coverage</li>
+              <li>Load requirements verified prior to dispatch (liftgate, e-track, straps, side doors, and more)</li>
+              <li>FMCSA safety ratings reviewed and strict compliance enforced against double brokering</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="ace-panel-list">
+              <h3 class="ace-panel-list-title">Carrier details:</h3>
+              <li>Driver name, contact number, truck and trailer number provided</li>
+              <li>Live tracking link and real-time ETA updates from dispatch through delivery</li>
+              <li>TSA, TWIC, and Hazmat certified drivers available for specialized shipments</li>
+            </ul>
+          </div>
         </div>
-        <div class="ace-panel-right">
-          <p class="ace-panel-right-title">Once Approved</p>
-          <ul class="ace-checklist">
-            <li>Carrier fully vetted and assigned to your shipment</li>
-            <li>Load confirmation sent with all shipment and contact details</li>
-          </ul>
+        <div class="card black-card">
+          <b class="body-text-large">Additional insurance and equipment photos available upon request.
+          </b>
         </div>
       </div>
 
@@ -540,15 +555,35 @@
       });
     });
 
-    // Ace Standard steps
-    document.querySelectorAll('.ace-step-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.ace-step-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.ace-step-panel').forEach(p => p.classList.remove('active'));
-        btn.classList.add('active');
-        document.querySelector(`.ace-step-panel[data-panel="${btn.dataset.step}"]`).classList.add('active');
-      });
+// Ace Standard steps
+const stepBtns = document.querySelectorAll('.ace-step-btn');
+
+stepBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const step = btn.dataset.step;
+    const panel = document.querySelector(`.ace-step-panel[data-panel="${step}"]`);
+    const isAlreadyActive = btn.classList.contains('active');
+    const isMobile = window.innerWidth < 1024;
+
+    // Remove active de todos
+    stepBtns.forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.ace-step-panel').forEach(p => {
+      p.classList.remove('active');
+      // Sempre devolve o painel para o container (posição original)
+      document.querySelector('.ace-standard-section .container').appendChild(p);
     });
+
+    if (isAlreadyActive) return;
+
+    btn.classList.add('active');
+    panel.classList.add('active');
+
+    // Só reposiciona no DOM em mobile
+    if (isMobile) {
+      btn.after(panel);
+    }
+  });
+});
 
     // Services tab
     const serviceData = {
