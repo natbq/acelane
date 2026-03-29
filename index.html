@@ -46,17 +46,18 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-bg"></div>
+
     <div class="container">
       <div class="hero-content">
-        <h1 class="heading-huge all-caps">Built To Deliver<br>Excellence</h1>
-        <p class="body-text-large">At Ace Lane Logistics, we believe freight brokerage should add value, not complexity. Our mission is to simplify logistics, provide seamless transportation, and build long-term relationships backed by trust and results.</p>
+        <h1 class="heading-huge">Built to deliver<br>excellence</h1>
+        <p class="text-xl">At Ace Lane Logistics, we believe freight brokerage should add value, not complexity. Our mission is to simplify logistics, provide seamless transportation, and build long-term relationships backed by trust and results.</p>
       </div>
     </div>
   </section>
 
-  <!-- QUICK FORM — SIMPLIFIED -->
+
+       <!-- QUICK FORM — SIMPLIFIED -->
   <section class="quick-form-section">
-    <div class="container">
       <div class="quick-form-card">
         <div id="qf-success" style="display:none; text-align:center; padding: var(--space-6) 0;">
           <svg style="width:40px;height:40px;stroke:#2a9d8f;fill:none;stroke-width:1.5;margin:0 auto var(--space-3);" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10"/></svg>
@@ -66,7 +67,10 @@
         <form id="qf-form" name="specialist-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
           <input type="hidden" name="form-name" value="specialist-request" />
           <input type="hidden" name="bot-field" style="display:none" />
-          <div class="form-grid-2">
+
+          
+
+          <div class="form-grid-4">
             <div>
               <label for="qf-name">Name</label>
               <input class="input" id="qf-name" name="first-name" type="text" required />
@@ -75,8 +79,6 @@
               <label for="qf-phone">Phone Number</label>
               <input class="input" id="qf-phone" name="phone" type="tel" />
             </div>
-          </div>
-          <div class="form-grid-2">
             <div>
               <label for="qf-company">Company</label>
               <input class="input" id="qf-company" name="company" type="text" required />
@@ -86,18 +88,23 @@
               <input class="input" id="qf-email" name="email" type="email" required />
             </div>
           </div>
-          <div style="margin-top: var(--space-4);">
-            <label for="qf-comments">Additional Information: </label>
+
+          <div class="grid-2">
+          <div>
+            <label for="qf-comments">Shipment Information: </label>
             <textarea rows="2" class="textarea" id="qf-comments" name="comments" ></textarea>
           </div>
 
-          <div class="form-actions">
-            <button class="btn btn-primary" type="submit" id="qf-btn">Talk with a Specialist</button>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit" id="qf-btn">Talk with a Specialist</button>
+            </div>
           </div>
         </form>
       </div>
-    </div>
   </section>
+      
+
+ 
 
   <!-- THE ACE STANDARD -->
   <section class="ace-standard-section">
@@ -114,44 +121,40 @@
             <img src="img/icons/quoting.svg" alt="Quoting">
           </div>
           <span class="ace-step-label">Quoting</span>
-          <span class="ace-step-desc">We collect all critical shipment details upfront to match the right capacity and provide a competitive rate. No back-and-forth or delays.</span>
         </button>
         <button class="ace-step-btn" data-step="compliance">
           <div class="ace-step-icon-wrap">
             <img src="img/icons/carrier-compliance.svg" alt="Compliance">
           </div>
           <span class="ace-step-label">Carrier Compliance</span>
-          <span class="ace-step-desc">Cargo theft and carrier fraud are real risks in freight. We assign only fully vetted carriers to every load, no exceptions.</span>
         </button>
         <button class="ace-step-btn" data-step="pickup">
           <div class="ace-step-icon-wrap">
             <img src="img/icons/pickup.svg" alt="Pickup">
           </div>
           <span class="ace-step-label">Pickup</span>
-          <span class="ace-step-desc">Pickup details confirmed, appointments aligned, and driver dispatched with full instructions before wheels roll.</span>
         </button>
         <button class="ace-step-btn" data-step="transit">
           <div class="ace-step-icon-wrap">
             <img src="img/icons/in-transit.svg" alt="Transit">
           </div>
           <span class="ace-step-label">In Transit</span>
-          <span class="ace-step-desc">Proactive tracking and communication to address issues before they become problems — from pickup to destination.</span>
         </button>
         <button class="ace-step-btn" data-step="delivery">
           <div class="ace-step-icon-wrap">
             <img src="img/icons/delivery.svg" alt="Delivery">
           </div>
           <span class="ace-step-label">Delivery</span>
-          <span class="ace-step-desc">On-time delivery, POD confirmation, and follow-up to close every load cleanly, efficiently, and without surprises.</span>
         </button>
       </div>
 
       <div class="ace-step-panel active" data-panel="quoting">
-        <span class="ace-panel-tag">Step 1 — Quoting</span>
+        <span class="ace-panel-tag">Step 1</span>
+        <h3 class="ace-panel-title">We collect all critical shipment details upfront to match the right capacity and provide a competitive rate. No back-and-forth or delays.</h3>
         <div class="grid-2">
           <div>
             <ul class="ace-panel-list">
-              <h3 class="ace-panel-list-title">We collect the following shipment details:</h3>
+              <h3 class="ace-panel-list-title">Shipment details:</h3>
               <li>Pickup and delivery locations (city/state or zip code)</li>
               <li>Requested pickup date and delivery window or appointment</li>
               <li>Commodity type, weight, piece count, and dimensions</li>
@@ -174,7 +177,7 @@
       </div>
 
       <div class="ace-step-panel" data-panel="compliance">
-        <span class="ace-panel-tag">Step 2 — Carrier Compliance</span>
+        <span class="ace-panel-tag">Step 2</span>
         <h3 class="ace-panel-title">Our network of qualified carriers covers North America, all tracked and managed from pickup to delivery.</h3>
         <div class="grid-2">
           <div>
@@ -203,7 +206,7 @@
 
       <div class="ace-step-panel" data-panel="pickup">
         <div class="ace-panel-left">
-          <span class="ace-panel-tag">Step 3 — Pickup</span>
+          <span class="ace-panel-tag">Step 3</span>
           <h3 class="ace-panel-title">Pickup details confirmed, appointments aligned, and driver dispatched before wheels roll.</h3>
           <p class="ace-panel-desc">We coordinate directly with your team and the carrier to make sure everything is in place before the driver arrives — no surprises, no missed windows.</p>
           <ul class="ace-panel-list">
@@ -225,7 +228,7 @@
 
       <div class="ace-step-panel" data-panel="transit">
         <div class="ace-panel-left">
-          <span class="ace-panel-tag">Step 4 — In Transit</span>
+          <span class="ace-panel-tag">Step 4</span>
           <h3 class="ace-panel-title">Proactive tracking and communication to address issues before they become problems.</h3>
           <p class="ace-panel-desc">We stay on top of your freight so you don't have to. Real-time visibility and check calls keep everyone aligned from pickup to delivery.</p>
           <ul class="ace-panel-list">
@@ -247,7 +250,7 @@
 
       <div class="ace-step-panel" data-panel="delivery">
         <div class="ace-panel-left">
-          <span class="ace-panel-tag">Step 5 — Delivery</span>
+          <span class="ace-panel-tag">Step 5</span>
           <h3 class="ace-panel-title">On-time delivery, POD confirmation, and follow-up to close every load cleanly and efficiently.</h3>
           <p class="ace-panel-desc">The job isn't done until the paperwork is. We confirm delivery, collect proof of delivery, and follow up to make sure everything went as planned.</p>
           <ul class="ace-panel-list">
@@ -439,45 +442,6 @@
       </div>
     </div>
   </section>
-
-  <!-- =============================================
-       FOOTER
-  ============================================= -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-            <img src="img/brand/ace-lane-logo-white.svg" class="footer-logo">
-          <div class="footer-contact">
-            <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011.07 3.18 2 2 0 013.07 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-              +1 (404) 921-832
-            </div>
-            <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              sales@acelanelogistics.com
-            </div>
-          </div>
-        </div>
-        <div>
-          <p class="footer-col-title">Navigation</p>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="industries.html">Industries</a></li>
-            <li><a href="contact.html">Talk with a specialist</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <ul class="footer-bottom-links">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Cookie Policy</a></li>
-        </ul>
-        <p class="footer-copyright">© Copyright 2026 Ace Lane Logistics. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
 
   <!-- FOOTER -->
   <footer class="footer">

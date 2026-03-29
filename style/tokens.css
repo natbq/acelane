@@ -12,9 +12,9 @@
 
   /* Neutros escuros (backgrounds) */
   --color-gray-dark:     #222328;   /* fundo hero, footer */
-  --color-gray:          #5e5f65;   /* cards escuros, navbar ao rolar */
+  --color-gray:          #525358;   /* cards escuros, navbar ao rolar */
   --color-gray-light:    #A6AAB2;   /* bordas escuras */
-  --color-gray-lighter:  #DCDDD9;   /* fundo alternado */
+  --color-gray-lighter:  #ededeb;   /* fundo alternado */
   --color-white:         #FFFFFF;
 
   /* Textos */
@@ -41,11 +41,11 @@
   --text-sm:    0.875rem;   /* 14px — labels de input, footer links */
   --text-base:  1rem;       /* 16px — corpo padrão */
   --text-lg:    1.125rem;   /* 18px — subtítulos */
-  --text-xl:    1.375rem;   /* 22px — card titles */
+  --text-xl:    1.3rem;   /* 22px — card titles */
   --text-2xl:   1.75rem;    /* 28px — section titles */
   --text-3xl:   2.25rem;    /* 36px — hero subtitle */
-  --text-4xl:   3.25rem;       /* 48px — hero title desktop */
-  --text-5xl:   4rem;    /* 60px — hero title large */
+  --text-4xl:   3.75rem;       /* 48px — hero title desktop */
+  --text-5xl:   4.5rem;    /* 60px — hero title large */
 
   /* Pesos */
   --weight-regular: 400;
@@ -239,7 +239,7 @@ a {
   field-sizing: content;
   resize: none;
   max-height: 10em;
-  min-height: 5em; 
+  min-height: 4em; 
 }
 
 label {
@@ -262,11 +262,6 @@ label {
   overflow: hidden;
 }
 
-.card.black-card {
-  background: var(--color-gray-dark);
-  color: var(--color-white);
-}
-
 /* ----------------------------
    SECTION HEADING
    ---------------------------- */
@@ -274,7 +269,7 @@ section {
   padding: var(--section-padding-y) 0;
 }
 
-   .section-title {
+.section-title {
   font-family: var(--font-heading);
   font-size: var(--text-2xl);
   font-weight: var(--weight-bold);
@@ -284,7 +279,6 @@ section {
 
 .section-subtitle {
   font-size: var(--text-base);
-  color: var(--color-text-secondary);
   line-height: var(--leading-relaxed);
   margin-top: var(--space-3);
 }
@@ -294,10 +288,9 @@ section {
    ---------------------------- */
 .heading-huge {
   font-size: var(--text-4xl);
-  font-weight: var(--weight-extrabold);
+  font-weight: var(--weight-bold);
   line-height: var(--leading-tight);
   color: var(--color-text-light);
-  text-transform: uppercase;
 }
 .heading-lg {font-size: var(--text-lg); font-weight: var(--weight-bold); line-height: var(--leading-tight) }
 .heading-xl {font-size: var(--text-xl); font-weight: var(--weight-bold); line-height: var(--leading-tight) }
@@ -312,6 +305,10 @@ p {
 
 .body-text-large {
   font-size: var(--text-lg);
+}
+
+.text-xl {
+  font-size: var(--text-xl);
 }
 
 @media (max-width: 768px) {
@@ -333,3 +330,7 @@ p {
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
    ---------------------------- */
+
+   .mb-0 {
+    margin-bottom: 0 !important;
+   }
