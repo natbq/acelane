@@ -172,7 +172,7 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url('../img/ace-lane-hero.png');
+      background-image: url('../img/ace-lane-industries.png');
       background-size: 110%;
       background-position: center right;
     }
@@ -183,8 +183,8 @@
       inset: 0;
       background: linear-gradient(
         to right,
-        rgba(0,0,0,0.9) 0%,
-        rgba(0,0,0,0.3) 50%,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,0.5) 50%,
         rgba(0,0,0,0.1) 100%
       );
     }
@@ -203,8 +203,8 @@
     .hero-content {
       position: relative;
       z-index: 1;
-      max-width: 550px;
-      padding: 120px 0;
+      max-width: 570px;
+      padding: 140px 0;
     }
     .hero-content .heading-huge {
         color: var(--color-white);
@@ -275,9 +275,13 @@
     .services-list {
       list-style: none;
       background: var(--color-white);
+      display: grid;
+      align-items: center;
     }
     .services-list li {
-      padding: var(--space-4) var(--space-5);
+      display: flex;
+      align-items: center; /* centraliza verticalmente dentro da célula */
+      padding: 0 var(--space-5); /* só padding horizontal */
       font-size: var(--text-sm);
       font-weight: var(--weight-semibold);
       letter-spacing: 0.04em;
@@ -286,6 +290,7 @@
       cursor: pointer;
       border-bottom: 1px solid var(--color-gray-lighter);
       transition: background var(--transition-fast), color var(--transition-fast);
+      height: 100%;
     }
     .services-list li:hover { background: var(--color-light-100); }
     .services-list li.active {
@@ -305,7 +310,7 @@
     .service-icon {
       width: 48px;
       height: 48px;
-      background: var(--color-gray-lighter);
+      background: var(--color-orange);
       border-radius: var(--radius-md);
       display: flex;
       align-items: center;
@@ -318,11 +323,10 @@
       font-size: var(--text-2xl);
       font-weight: var(--weight-bold);
     }
-    .service-panel-desc { font-size: var(--text-base); color: rgba(255,255,255,0.7); line-height: var(--leading-relaxed); }
+    .service-panel-desc { font-size: var(--text-base); line-height: var(--leading-relaxed); }
     .service-panel-list { list-style: none; display: flex; flex-direction: column; gap: var(--space-2); }
     .service-panel-list li {
       font-size: var(--text-sm);
-      color: rgba(255,255,255,0.7);
       padding-left: var(--space-4);
       position: relative;
     }
@@ -925,7 +929,7 @@
 
           /* ---- ACE STANDARD ---- */
     @media (min-width: 768px) { 
-    .ace-standard-intro { max-width: 70%; margin-bottom: var(--space-12); }
+    .ace-standard-intro { max-width: 60%; margin-bottom: var(--space-12); }
   }
 
     /* Cards nav */

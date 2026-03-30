@@ -49,8 +49,9 @@
 
     <div class="container">
       <div class="hero-content">
-        <h1 class="heading-huge">Built to deliver<br>excellence</h1>
-        <p class="text-xl">At Ace Lane Logistics, we believe freight brokerage should add value, not complexity. Our mission is to simplify logistics, provide seamless transportation, and build long-term relationships backed by trust and results.</p>
+        <h1 class="heading-huge">Built to deliver excellence</h1>
+        <p class="body-text-large">We believe freight brokerage should add value, not complexity.<br>
+          Our mission is to simplify logistics, provide seamless transportation, and build long-term relationships backed by trust and results.</p>
       </div>
     </div>
   </section>
@@ -96,7 +97,7 @@
           </div>
 
             <div class="form-actions">
-              <button class="btn btn-primary" type="submit" id="qf-btn">Talk with a Specialist</button>
+              <button class="btn btn-primary" type="submit" id="qf-btn">Submit</button>
             </div>
           </div>
         </form>
@@ -111,198 +112,29 @@
     <div class="container">
       <div class="ace-standard-intro">
         <h2 class="heading-3xl">The Ace Standard</h2>
-        <p class="section-subtitle">Poor communication is the most common and costly mistake in freight. Incomplete information and details that fall through the cracks can lead to delays, claims, and dissatisfied customers.<br><br>
-        Our <strong class="highlight">Verified Checkpoint System</strong> is a five-stage process that closes the gap by confirming and documenting each critical detail with clear communication at every shipping stage. The result is a freight experience defined by Accountability, Clarity, and Execution (ACE).</p>
+        <p class="section-subtitle">Overlooked communication gaps, incomplete information, and unverified partners cause unnecessary cost and risk. 
+          Our five‑stage  <strong class="highlight">Verified Checkpoint System</strong> ensures <span class="orange">A</span>ccountability, <span class="orange">C</span>larity, and <span class="orange">E</span>xecution. Nothing moves forward without verification.</p>
       </div>
 
-      <div class="ace-steps-nav">
-        <button class="ace-step-btn active" data-step="quoting">
-          <div class="ace-step-icon-wrap">
-            <img src="img/icons/quoting.svg" alt="Quoting">
-          </div>
-          <span class="ace-step-label">Quoting</span>
-        </button>
-        <button class="ace-step-btn" data-step="compliance">
-          <div class="ace-step-icon-wrap">
-            <img src="img/icons/carrier-compliance.svg" alt="Compliance">
-          </div>
-          <span class="ace-step-label">Carrier Compliance</span>
-        </button>
-        <button class="ace-step-btn" data-step="pickup">
-          <div class="ace-step-icon-wrap">
-            <img src="img/icons/pickup.svg" alt="Pickup">
-          </div>
-          <span class="ace-step-label">Pickup</span>
-        </button>
-        <button class="ace-step-btn" data-step="transit">
-          <div class="ace-step-icon-wrap">
-            <img src="img/icons/in-transit.svg" alt="Transit">
-          </div>
-          <span class="ace-step-label">In Transit</span>
-        </button>
-        <button class="ace-step-btn" data-step="delivery">
-          <div class="ace-step-icon-wrap">
-            <img src="img/icons/delivery.svg" alt="Delivery">
-          </div>
-          <span class="ace-step-label">Delivery</span>
-        </button>
-      </div>
-
-      <div class="ace-step-panel active" data-panel="quoting">
-        <span class="ace-panel-tag">Step 1</span>
-        <h3 class="ace-panel-title">We collect all critical shipment details upfront to match the right capacity and provide a competitive rate. No back-and-forth or delays.</h3>
-        <div class="grid-2">
-          <div>
-            <ul class="ace-panel-list">
-              <h3 class="ace-panel-list-title">Shipment details:</h3>
-              <li>Pickup and delivery locations (city/state or zip code)</li>
-              <li>Requested pickup date and delivery window or appointment</li>
-              <li>Commodity type, weight, piece count, and dimensions</li>
-              <li>Packaging type (palletized, crated, floor-loaded, loose cartons, or carts)</li>
-              <li>Special requirements (liftgate, white glove, temp control, trade show, multi-stop, etc.)</li>
-            </ul>
-           </div>
-          <div>
-            <ul class="ace-panel-list">
-              <h3 class="ace-panel-list-title">Once approved:</h3>
-              <li>Transit time, service level and capacity secured for immediate pickup</li>
-              <li>Pickup and delivery references, load-specific requirements and documentation confirmed</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="card black-card">
-          <b class="body-text-large">The details collected at this stage make all the difference, eliminating wasted time and keeping every shipment on schedule.</b>
-        </div>
-      </div>
-
-      <div class="ace-step-panel" data-panel="compliance">
-        <span class="ace-panel-tag">Step 2</span>
-        <h3 class="ace-panel-title">Our network of qualified carriers covers North America, all tracked and managed from pickup to delivery.</h3>
-        <div class="grid-2">
-          <div>
-            <ul class="ace-panel-list">
-              <h3 class="ace-panel-list-title">Carrier Verification:</h3>
+      <div class="services-layout">
+        <ul class="services-list" id="servicesList">
+          <li class="active" data-service="quoting">Quoting</li>
+          <li data-service="carrier-compliance">Carrier Compliance</li>
+          <li data-service="pickup">Pickup</li>
+          <li data-service="in-transit">In Transit</li>
+          <li data-service="delivery">Delivery</li>
+        </ul>
+        <div class="services-panel" id="servicePanel">
+          <div class="service-icon"><img src="img/icons/quoting.svg"></div>
+          <h3 class="service-panel-title">Quoting</h3>
+          <p class="service-panel-desc">We collect all critical shipment details upfront to match the right capacity and provide a competitive rate. No back-and-forth or delays.</p>
+          <h3 class="ace-panel-list-title">Carrier Verification:</h3>
+          <ul class="service-panel-list">
               <li>Active operating authority (MC/DOT) confirmed, minimum 12 months in operation</li>
               <li>Cargo and liability insurance validated directly with provider, $100k minimum up to $250k cargo coverage</li>
               <li>Load requirements verified prior to dispatch (liftgate, e-track, straps, side doors, and more)</li>
               <li>FMCSA safety ratings reviewed and strict compliance enforced against double brokering</li>
             </ul>
-          </div>
-          <div>
-            <ul class="ace-panel-list">
-              <h3 class="ace-panel-list-title">Carrier details:</h3>
-              <li>Driver name, contact number, truck and trailer number provided</li>
-              <li>Live tracking link and real-time ETA updates from dispatch through delivery</li>
-              <li>TSA, TWIC, and Hazmat certified drivers available for specialized shipments</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card black-card">
-          <b class="body-text-large">Additional insurance and equipment photos available upon request.
-          </b>
-        </div>
-      </div>
-
-      <div class="ace-step-panel" data-panel="pickup">
-        <div class="ace-panel-left">
-          <span class="ace-panel-tag">Step 3</span>
-          <h3 class="ace-panel-title">Pickup details confirmed, appointments aligned, and driver dispatched before wheels roll.</h3>
-          <p class="ace-panel-desc">We coordinate directly with your team and the carrier to make sure everything is in place before the driver arrives — no surprises, no missed windows.</p>
-          <ul class="ace-panel-list">
-            <li>Pickup appointment confirmed with shipper</li>
-            <li>Driver dispatched with complete load instructions</li>
-            <li>Pickup number and reference details shared</li>
-            <li>BOL and paperwork requirements communicated</li>
-            <li>Load confirmed picked up with check call</li>
-          </ul>
-        </div>
-        <div class="ace-panel-right">
-          <p class="ace-panel-right-title">Once Approved</p>
-          <ul class="ace-checklist">
-            <li>Pickup confirmed with timestamp and piece count</li>
-            <li>Shipment officially in transit, tracking initiated</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="ace-step-panel" data-panel="transit">
-        <div class="ace-panel-left">
-          <span class="ace-panel-tag">Step 4</span>
-          <h3 class="ace-panel-title">Proactive tracking and communication to address issues before they become problems.</h3>
-          <p class="ace-panel-desc">We stay on top of your freight so you don't have to. Real-time visibility and check calls keep everyone aligned from pickup to delivery.</p>
-          <ul class="ace-panel-list">
-            <li>Regular check calls with driver throughout transit</li>
-            <li>Proactive ETA updates shared with consignee</li>
-            <li>Delays or exceptions communicated immediately</li>
-            <li>Appointment reconfirmed if schedule changes</li>
-            <li>Any claims or damage escalated and documented in real time</li>
-          </ul>
-        </div>
-        <div class="ace-panel-right">
-          <p class="ace-panel-right-title">Once Approved</p>
-          <ul class="ace-checklist">
-            <li>Freight confirmed on schedule and on track</li>
-            <li>Delivery appointment locked and consignee notified</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="ace-step-panel" data-panel="delivery">
-        <div class="ace-panel-left">
-          <span class="ace-panel-tag">Step 5</span>
-          <h3 class="ace-panel-title">On-time delivery, POD confirmation, and follow-up to close every load cleanly and efficiently.</h3>
-          <p class="ace-panel-desc">The job isn't done until the paperwork is. We confirm delivery, collect proof of delivery, and follow up to make sure everything went as planned.</p>
-          <ul class="ace-panel-list">
-            <li>Delivery confirmed with driver check call</li>
-            <li>Proof of delivery (POD) collected and filed</li>
-            <li>Any exceptions, shortages, or damages documented</li>
-            <li>Final invoice issued with all supporting documents</li>
-            <li>Customer follow-up to confirm satisfaction</li>
-          </ul>
-        </div>
-        <div class="ace-panel-right">
-          <p class="ace-panel-right-title">Once Approved</p>
-          <ul class="ace-checklist">
-            <li>POD signed and on file — load officially closed</li>
-            <li>Full audit trail available for any claims or disputes</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="heading-3xl">Our Services</h2>
-        <p class="section-subtitle">Our services are backed by expertise, the right capacity, and 24/7-365 support.</p>
-      </div>
-      <div class="services-layout">
-        <ul class="services-list" id="servicesList">
-          <li class="active" data-service="ftl">Full Truckload (FTL)</li>
-          <li data-service="ltl">Less-Than-Truckload (LTL)</li>
-          <li data-service="flatbed">Flatbed</li>
-          <li data-service="temp">Temperature Controlled</li>
-          <li data-service="produce">Produce</li>
-          <li data-service="warehousing">Warehousing</li>
-          <li data-service="expedited">Expedited</li>
-          <li data-service="drayage">Drayage</li>
-          <li data-service="heavy">Heavy Haul</li>
-          <li data-service="intermodal">Intermodal</li>
-        </ul>
-        <div class="services-panel" id="servicePanel">
-          <div class="service-icon"><img src="img/icons/truck.svg"></div>
-          <h3 class="service-panel-title">Full Truckload (FTL)</h3>
-          <p class="service-panel-desc">Dedicated full truck capacity for your shipment. Ideal for large loads that can fill an entire trailer, offering faster transit and reduced handling.</p>
-          <ul class="service-panel-list">
-            <li>Direct point-to-point delivery</li>
-            <li>Reduced risk of damage</li>
-            <li>Faster transit times</li>
-            <li>Cost-effective for large volumes</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -551,16 +383,11 @@ stepBtns.forEach(btn => {
 
     // Services tab
     const serviceData = {
-      ftl:        { title: 'Full Truckload (FTL)',        icon:'img/icons/truck.svg',       desc: 'Dedicated full truck capacity for your shipment. Ideal for large loads that can fill an entire trailer, offering faster transit and reduced handling.',   items: ['Direct point-to-point delivery', 'Reduced risk of damage', 'Faster transit times', 'Cost-effective for large volumes'] },
-      ltl:        { title: 'Less-Than-Truckload (LTL)',   icon:'img/icons/LTL.svg',         desc: 'Share trailer space with other shippers for smaller loads. A cost-effective solution when you don\'t need a full truck.',                                items: ['Pay only for space used', 'Ideal for 150–15,000 lbs', 'Multiple pickups & deliveries', 'Flexible scheduling'] },
-      flatbed:    { title: 'Flatbed',                     icon:'img/icons/flatbed.svg',     desc: 'Open-deck trailers for oversized, heavy, or oddly-shaped freight that can\'t be enclosed in a standard trailer.',                                       items: ['Oversized & heavy loads', 'Construction materials', 'Industrial equipment', 'No size restrictions'] },
-      temp:       { title: 'Temperature Controlled',      icon:'img/icons/temperature.svg', desc: 'Refrigerated and climate-controlled trailers to keep your perishable freight at the right temperature throughout the journey.',                        items: ['Frozen & refrigerated cargo', 'Pharmaceutical products', '24/7 temperature monitoring', 'Compliance with food safety standards'] },
-      produce:    { title: 'Produce',                     icon:'img/icons/produce.svg',     desc: 'Specialized transportation for fresh fruits, vegetables, and other perishable goods with time-sensitive delivery requirements.',                       items: ['Fresh produce expertise', 'Rapid transit routes', 'Temperature-sensitive handling', 'Harvest-season capacity'] },
-      warehousing:{ title: 'Warehousing',                 icon:'img/icons/warehouse.svg',   desc: 'Short and long-term storage solutions with inventory management, cross-docking, and distribution services.',                                           items: ['Short & long-term storage', 'Inventory management', 'Cross-docking available', 'Strategic locations'] },
-      expedited:  { title: 'Expedited',                   icon:'img/icons/van.svg',         desc: 'Time-critical shipments that need to move fast. Our expedited service guarantees the fastest possible transit with dedicated resources.',               items: ['Same-day & next-day options', 'Dedicated drivers', 'Real-time tracking', 'Priority handling'] },
-      drayage:    { title: 'Drayage',                     icon:'img/icons/truck.svg',       desc: 'Port and rail yard container movement services connecting intermodal hubs to your warehouse or final destination efficiently.',                        items: ['Port drayage', 'Rail yard pickup', 'Container repositioning', 'Customs coordination'] },
-      heavy:      { title: 'Heavy Haul',                  icon:'img/icons/truck.svg',       desc: 'Transportation of oversized and overweight loads requiring special permits, route surveys, and escort vehicles.',                                       items: ['Super loads & heavy equipment', 'Permit acquisition', 'Route surveys', 'Pilot car coordination'] },
-      intermodal: { title: 'Intermodal',                  icon:'img/icons/truck.svg',       desc: 'Combining rail and truck transportation to optimize cost, capacity, and sustainability for long-haul freight.',                                        items: ['Rail + truck combination', 'Cost savings vs OTR', 'Reduced carbon footprint', 'Nationwide coverage'] },
+      quoting:        { title: 'Quoting',        icon:'img/icons/truck.svg',       desc: 'Dedicated full truck capacity for your shipment. Ideal for large loads that can fill an entire trailer, offering faster transit and reduced handling.',   items: ['Direct point-to-point delivery', 'Reduced risk of damage', 'Faster transit times', 'Cost-effective for large volumes'] },
+      carriercompliance:        { title: 'Carrier Compliance',   icon:'img/icons/LTL.svg',         desc: 'Share trailer space with other shippers for smaller loads. A cost-effective solution when you don\'t need a full truck.',                                items: ['Pay only for space used', 'Ideal for 150–15,000 lbs', 'Multiple pickups & deliveries', 'Flexible scheduling'] },
+      pickup:    { title: 'Pickup',                     icon:'img/icons/flatbed.svg',     desc: 'Open-deck trailers for oversized, heavy, or oddly-shaped freight that can\'t be enclosed in a standard trailer.',                                       items: ['Oversized & heavy loads', 'Construction materials', 'Industrial equipment', 'No size restrictions'] },
+      intransit:       { title: 'In  Transit',      icon:'img/icons/temperature.svg', desc: 'Refrigerated and climate-controlled trailers to keep your perishable freight at the right temperature throughout the journey.',                        items: ['Frozen & refrigerated cargo', 'Pharmaceutical products', '24/7 temperature monitoring', 'Compliance with food safety standards'] },
+      delivery:    { title: 'Delivery',                     icon:'img/icons/produce.svg',     desc: 'Specialized transportation for fresh fruits, vegetables, and other perishable goods with time-sensitive delivery requirements.',                       items: ['Fresh produce expertise', 'Rapid transit routes', 'Temperature-sensitive handling', 'Harvest-season capacity'] },
     };
     const servicesList = document.getElementById('servicesList');
     const servicePanel = document.getElementById('servicePanel');
