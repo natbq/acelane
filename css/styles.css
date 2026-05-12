@@ -622,6 +622,7 @@
   overflow: hidden;
   height: 380px;
   transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  scroll-margin-top: 200px;
 }
 .service-card:hover {
   transform: translateY(-4px);
