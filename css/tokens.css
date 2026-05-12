@@ -162,18 +162,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-ul {
-  list-style: none;
+ul, ol {
+  list-style: none !important;
+  padding-inline-start: 0;
+  -webkit-padding-start: 0;
+  margin-inline-start: 0;
 }
 
-ul li {
-  list-style-type: none;
-  -webkit-padding-start: 0;  /* Safari antigo */
+ul li, ol li {
+  list-style: none !important;
+  list-style-type: none !important;
+  list-style-image: none !important;
 }
 
-/* Caso esteja usando ::marker e quer garantir */
-ul li::marker {
-  content: "";
+ul li::marker,
+ol li::marker {
+  content: "" !important;
+  display: none !important;
+  font-size: 0 !important;
+  color: transparent !important;
 }
 
 img {
