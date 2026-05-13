@@ -928,10 +928,10 @@ color: var(--color-gray-lighter);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--space-8);
+  gap: var(--space-12);
   filter: brightness(0) invert(1);
   opacity: 0.5;
-  margin-top: var(--space-6);
+  margin-top: var(--space-8);
 }
 
 .trust-logos img {
@@ -939,8 +939,8 @@ color: var(--color-gray-lighter);
   transition: transform var(--transition-normal);
 }
 
-.trust-logos .logo-tia { height: 60px;}
-.trust-logos .logo-abpl { height: 45px;}
+.trust-logos .logo-tia { height: 70px;}
+.trust-logos .logo-abpl { height: 55px;}
 
 .trust-logos a:hover img { transform: scale(1.04); }
 
@@ -1259,13 +1259,7 @@ color: var(--color-gray-lighter);
   font-size: var(--text-4xl);
   font-weight: var(--weight-bold);
   line-height: 1.1;
-}
-.policy-hero p {
-  font-size: var(--text-base);
-  line-height: var(--leading-relaxed);
-  color: var(--color-text-light);
-  margin-top: var(--space-3);
-  opacity: 0.85;
+  text-align: center;
 }
 
 .policy-body {
