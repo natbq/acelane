@@ -11,10 +11,10 @@
   --color-orange-hover:  #B84320;   /* hover dos botões laranja */
 
   /* Neutros escuros (backgrounds) */
-  --color-black:         #101010;   /* fundo hero, footer */
+  --color-black:         #1c1d21;   /* fundo hero, footer */
   --color-gray-dark:     #222328;   /* fundo hero, footer */
   --color-gray:          #4f5057;   /* cards escuros, navbar ao rolar */
-  --color-gray-light:    #A6AAB2;   /* bordas escuras */
+  --color-gray-light:    #b6b6af;   /* bordas escuras */
   --color-gray-lighter:  #DCDDD9;   /* fundo alternado */
   --color-gray-bg:       #F4F4F4;
   --color-white:         #FFFFFF;
@@ -44,7 +44,7 @@
   --text-base:  1rem;       /* 16px — corpo padrão */
   --text-lg:  clamp(1rem,     0.96rem + 0.19vw, 1.125rem); /* 16 → 18px */
   --text-xl:  clamp(1.125rem, 1.06rem + 0.26vw, 1.3rem);   /* 18 → 20.8px */
-  --text-2xl: clamp(1.375rem, 1.24rem + 0.56vw, 1.75rem);  /* 22 → 28px */
+  --text-2xl: clamp(1.35rem, 1.24rem + 0.56vw, 1.5rem);  /* 22 → 28px */
   --text-3xl: clamp(1.5rem,   1.3rem + 0.75vw, 2rem);     /* 24 → 32px */
   --text-4xl: clamp(1.75rem, 1.3rem + 1.4vw, 3.25rem);  /* 28 → 52px */
   --text-5xl: clamp(3rem, 2rem + 3.33vw, 4.5rem); /* 56 → 80px */
@@ -92,10 +92,8 @@
    BORDER RADIUS
    ---------------------------- */
 :root {
-  --radius-sm:   4px;    /* inputs, tags */
-  --radius-md:   8px;    /* cards pequenos */
-  --radius-lg:   12px;   /* cards grandes, form container */
-  --radius-xl:   16px;   /* CTA section */
+  --radius-sm:   4px;    /* buttons */
+  --radius-md:   8px;    /* cards */
   --radius-pill: 999px;  /* badges */
   --radius-none: 0;
 }
@@ -369,6 +367,8 @@ section {
   font-size: var(--text-base);
   font-weight: var(--weight-bold);
   line-height: var(--leading-tight);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 p {
@@ -378,6 +378,11 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.text-sm {
+  font-size: var(--text-sm);
+  line-height: var(--leading-tight);
 }
 
 .text-lg {
