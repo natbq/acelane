@@ -40,7 +40,7 @@
 
   /* Tamanhos */
   --text-xs:    0.75rem;    /* 12px — captions, copyright */
-  --text-sm:    0.875rem;   /* 14px — labels de input, footer links */
+  --text-sm:    0.9rem;   /* 14px — labels de input, footer links */
   --text-base:  1rem;       /* 16px — corpo padrão */
   --text-lg:  clamp(1rem,     0.96rem + 0.19vw, 1.125rem); /* 16 → 18px */
   --text-xl:  clamp(1.125rem, 1.06rem + 0.26vw, 1.3rem);   /* 18 → 20.8px */
@@ -382,7 +382,7 @@ p {
 
 .text-sm {
   font-size: var(--text-sm);
-  line-height: var(--leading-tight);
+  line-height: var(--leading-snug);
 }
 
 .text-lg {
