@@ -83,7 +83,7 @@
   --space-32:  8rem;      /* 128px */
 
   /* Seções */
-  --section-padding-y:  var(--space-24);  /* padding vertical padrão de seção */
+  --section-padding-y:  var(--space-32);  /* padding vertical padrão de seção */
   --section-padding-x:  var(--space-6);   /* padding horizontal (mobile) */
 
 }
@@ -202,6 +202,10 @@ a {
 
 .all-caps {
   text-transform: uppercase;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
 }
 
 /* ----------------------------
