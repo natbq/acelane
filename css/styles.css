@@ -671,6 +671,20 @@
 @media (max-width: 540px) {
   .services-grid { grid-template-columns: 1fr; }
   .service-tile { aspect-ratio: 16 / 9; }
+  .service-tile::before {
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.95) 100%);
+  }
+  .service-tile .service-tile__content p {
+    opacity: 1;
+    max-height: 6em;
+    transform: translateY(0);
+    margin-top: var(--space-2);
+  }
+  
+  .service-tile .service-tile__arrow {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 /* ============================================
@@ -741,6 +755,9 @@
 @media (max-width: 678px) {
   .service-card { grid-template-columns: 1fr; height: auto; }
   .service-card-img { aspect-ratio: 16 / 9; }
+  .service-card-img {
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+  }
 }
 
 /* ============================================
@@ -881,44 +898,51 @@
   .about-card { padding: var(--space-6); }
 }
 
+@media (max-width: 500px) {
+.about-head { margin-bottom: var(--space-10); }
+}
+
 /* Partner cards */
 .partners-head { margin-bottom: var(--space-8); }
+
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-4);
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
 }
+
 .partner-card {
-  position: relative;
-  aspect-ratio: 1 / 1;
-  border-radius: var(--radius-sm);
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  border-radius: var(--radius-md);
   overflow: hidden;
-  background: var(--color-gray);
+  background: var(--color-white);
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
+
 .partner-card img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  transition: transform var(--transition-slow);
+  object-position: top;
+  display: block;
 }
-.partner-card:hover img { transform: scale(1.05); }
-.partner-card::after {
-  content: "";
-  position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.85) 100%);
+
+.partner-bio {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  background: var(--color-white);
 }
-.partner-info {
-  position: absolute;
-  left: var(--space-4);
-  bottom: var(--space-4);
-  z-index: 2;
-  color: var(--color-white);
-}
+
 .partner-name {
   font-family: var(--font-heading);
   font-size: var(--text-lg);
   font-weight: var(--weight-bold);
   line-height: 1.1;
+  color: var(--color-black); /* ajuste para a cor escura do seu sistema */
 }
+
 .partner-role {
   font-family: var(--font-label);
   font-size: var(--text-xs);
@@ -929,11 +953,36 @@
   margin-top: var(--space-1);
 }
 
-@media (max-width: 900px) {
-  .partners-grid { grid-template-columns: repeat(2, 1fr); }
+.partner-desc {
+  font-size: var(--text-sm);
+  padding-top: 1rem;
 }
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .partner-card {
+    grid-template-columns: 180px 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+  .partner-card {
+    grid-template-columns: 150px 1fr;
+  }
+}
+
 @media (max-width: 480px) {
-  .partners-grid { grid-template-columns: 1fr; }
+  .partner-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px auto;
+  }
+  .partner-card img {
+    width: 100%;
+    height: 220px;
+  }
 }
 
 /* ============================================
@@ -1362,7 +1411,7 @@ color: var(--color-gray-lighter);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--space-4);
+  gap: var(--space-2);
   min-width: 0;
 }
 
@@ -1439,7 +1488,8 @@ color: var(--color-gray-lighter);
 /* ---------- Desktop large (1400px+): 3 colunas ---------- */
 @media (min-width: 1400px) {
   .contact-row {
-    grid-template-columns: 2fr minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: 1fr 0.4fr;
+    gap: auto;
   }
   .contact-row .hero-text {
     grid-column: auto; /* reseta: volta a ocupar só 1 coluna */
@@ -1449,4 +1499,8 @@ color: var(--color-gray-lighter);
 /* ---------- Ultra-wide (1800px+) ---------- */
 @media (min-width: 1800px) {
   .contact-card { width: 70%; }
+  .contact-row {
+    grid-template-columns: 1fr 0.4fr;
+    gap: auto;
+  }
 }
