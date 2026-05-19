@@ -267,11 +267,15 @@ a {
   font-weight: var(--weight-bold);
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  padding: var(--space-3);
+  padding: var(--space-3) var(--space-5);
   border-radius: var(--radius-sm);
   border: none;
   cursor: pointer;
   transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn.sm {
+  padding: var(--space-1) var(--space-2);
 }
 
 .btn:hover  { transform: translateY(-1px); }
