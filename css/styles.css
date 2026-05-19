@@ -813,6 +813,7 @@
 }
 
 .industry-row:hover h2 { color: var(--color-orange); }
+.industry-row:first-child { padding-top: 0; }
 .industry-row:last-child { border-bottom: none; }
 
 .industry-num {

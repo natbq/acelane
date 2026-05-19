@@ -12,7 +12,7 @@ Static HTML/CSS/JS site for Ace Lane Logistics, ready to deploy on Netlify with 
 ├── about.html              # About Us
 ├── services.html           # Services (8 detailed cards)
 ├── industries.html         # Industries (numbered list 01–06)
-├── contact.html            # Standalone "Talk with a specialist" page
+├── contact.html            # Standalone "Talk to a specialist" page
 ├── privacy-policy.html     # Freight-brokerage privacy policy
 ├── cookie-policy.html      # Cookie policy + table of cookies in use
 ├── css/
@@ -55,7 +55,7 @@ After the first deploy: **Domain settings → Add custom domain → acelanelogis
 
 ## Form submissions → Microsoft 365 email
 
-The "Talk with a specialist" form uses **Netlify Forms**. It works out of the box, and Netlify forwards every submission to whichever email you configure — including a Microsoft 365 / Outlook inbox.
+The "Talk to a specialist" form uses **Netlify Forms**. It works out of the box, and Netlify forwards every submission to whichever email you configure — including a Microsoft 365 / Outlook inbox.
 
 ### Steps
 

@@ -47,8 +47,8 @@
   --text-2xl: clamp(1.35rem, 1.24rem + 0.56vw, 1.5rem);  /* 22 → 28px */
   --text-3xl: clamp(1.5rem,   1.3rem + 0.75vw, 2rem);     /* 24 → 32px */
   --text-4xl: clamp(1.75rem, 1.3rem + 1.4vw, 3.25rem);  /* 28 → 52px */
-  --text-5xl: clamp(3rem, 2rem + 3.33vw, 4.5rem); /* 56 → 80px */
-  
+  --text-5xl: clamp(2.75rem, 1.7rem + 2vw, 4rem); /* 56 → 80px */
+  --text-6xl: clamp(3rem, 2rem + 3.33vw, 4.5rem); /* 56 → 80px */
 
   /* Pesos */
   --weight-regular: 400;
@@ -361,7 +361,7 @@ section {
    Font Size
    ---------------------------- */
 .heading-huge {
-  font-size: var(--text-5xl);
+  font-size: var(--text-6xl);
   font-weight: var(--weight-bold);
   line-height: var(--leading-tight);
   color: var(--color-text-light);
@@ -371,6 +371,7 @@ section {
 .heading-2xl {font-size: var(--text-2xl); font-weight: var(--weight-bold); line-height: var(--leading-tight);}
 .heading-3xl {font-size: var(--text-3xl); font-weight: var(--weight-bold); line-height: var(--leading-tight); }
 .heading-4xl {font-size: var(--text-4xl); font-weight: var(--weight-bold); line-height: var(--leading-tight); }
+.heading-5xl {font-size: var(--text-5xl); font-weight: var(--weight-bold); line-height: var(--leading-tight); }
 .heading-base {
   font-size: var(--text-base);
   font-weight: var(--weight-bold);
