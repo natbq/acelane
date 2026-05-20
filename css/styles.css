@@ -263,7 +263,8 @@
   z-index: 2;
   width: 100%;
 }
-.hero-text { max-width: 580px; }
+.hero.main .hero-text { max-width: 580px; }
+.hero-text { max-width: 700px; }
 .hero h1 {
   margin-bottom: var(--space-5);
 }
@@ -311,16 +312,12 @@
   align-self: flex-end;
   opacity: 0.85;
 }
-
+@media (max-width: 1440px) {
+.hero-text { max-width: 620px; }
+}
 @media (max-width: 1024px) {
   .hero-text {
     max-width: 60%;
-}
-.hero-bg::after {
-  background: linear-gradient(135deg,
-    rgba(20, 20, 20, 0.92) 0%,
-    rgba(20, 20, 20,0.6) 70%,
-    rgba(20, 20, 20,0.1) 100%);
 }
 }
 
@@ -729,7 +726,7 @@
 }
 .service-card {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.3fr 2fr;
   background: var(--color-white);
   border-radius: var(--radius-md);
   transition: transform var(--transition-normal), box-shadow var(--transition-normal);
@@ -784,7 +781,7 @@
   color: var(--color-orange);
 }
 
-@media (max-width: 678px) {
+@media (max-width: 1024px) {
   .service-card { grid-template-columns: 1fr; height: auto; }
   .service-card-img { aspect-ratio: 16 / 9; }
   .service-card-img {
@@ -1499,19 +1496,19 @@ color: var(--color-gray-lighter);
 /* ---------- Tablet/Desktop (787px+): hero em cima, 2 cards lado a lado ---------- */
 @media (min-width: 787px) {
   .contact-row {
-    grid-template-columns: 1fr 1fr;
-  }
-  .contact-row .hero-text {
-    grid-column: 1 / -1; /* hero ocupa a linha inteira */
+    grid-template-columns: 1.5fr 1fr;
   }
   .contact-card {padding: var(--space-10); width: 90%; top: -5rem;}
+  .contact-row .hero-text {
+    max-width: 100%;
+  }
 }
 
 /* ---------- Desktop large (1400px+): 3 colunas ---------- */
 @media (min-width: 1400px) {
   .contact-row {
-    grid-template-columns: 1fr 0.4fr;
-    gap: auto;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-24);
   }
   .contact-row .hero-text {
     grid-column: auto; /* reseta: volta a ocupar só 1 coluna */
