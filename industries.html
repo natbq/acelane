@@ -172,19 +172,21 @@
             </div>
   
             <form class="talk-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-              <input type="hidden" name="form-name" value="page-industries">
+              <input type="hidden" name="form-name" value="contact">
               <p class="honeypot"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+              <input type="hidden" name="page" value="page-industries">
   
               <div class="form-row">
-                <label for="firstName">First Name</label>
+                <label for="firstName">First Name*</label>
                 <input class="input" type="text" name="firstName" id="firstName" required>
               </div>
               <div class="form-row">
-                <label for="lastName">Last Name</label>
-                <input class="input" type="text" name="lastName" id="lastName">
+                <label for="lastName">Last Name*</label>
+                <input class="input" type="text" name="lastName" id="lastName" required>
               </div>
               <div class="form-row">
-                <label for="email">E-mail</label>
+                <label for="email">E-mail*</label>
                 <input class="input" type="email" name="email" id="email" required>
               </div>
               <div class="form-row">
@@ -192,12 +194,12 @@
                 <input class="input" type="tel" name="phone" id="phone">
               </div>
               <div class="form-row full">
-                <label for="company">Company</label>
-                <input class="input" type="text" name="company" id="company">
+                <label for="company">Company*</label>
+                <input class="input" type="text" name="company" id="company" required>
               </div>
               <div class="form-row full">
-                <label for="message">Message</label>
-                <textarea class="textarea" name="message" id="message" rows="4"></textarea>
+                <label for="message">Message*</label>
+                <textarea class="textarea" name="message" id="message" rows="4" required></textarea>
               </div>
               <div class="form-status" role="status" aria-live="polite"></div>
               <div class="form-row submit-row">

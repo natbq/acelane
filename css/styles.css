@@ -1204,14 +1204,15 @@ color: var(--color-gray-lighter);
 }
 .form-status.is-success {
   display: block;
-  background: rgba(34,35,40,0.85);
-  color: var(--color-white);
+  background: var(--color-white);
+  color: #077d3a;
+  border: 1px solid #63d794;
 }
 .form-status.is-error {
   display: block;
   background: var(--color-white);
   color: #b00020;
-  border: 1px solid #b00020;
+  border: 1px solid #b0002078;
 }
 
 .honeypot {
