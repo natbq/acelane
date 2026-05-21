@@ -342,12 +342,17 @@
 }
 
 @media (max-width: 480px) {
-
 .hero-bg {
   background-position: -40rem;
 }
   .hero-text {
     max-width: 90%;
+}
+.hero--about .hero-bg {
+  background-position: center;
+}
+.hero--about .hero-text {
+  max-width: 100%;
 }
 }
 
@@ -1009,9 +1014,14 @@
   
   .partner-card {
     grid-template-columns: 150px 1fr;
+    padding: var(--space-4);
   }
   .partner-info {
     grid-template-columns: 1fr 4fr;
+  }
+  .partner-card img {
+    width: 160px;
+    height: 160px;
   }
 }
 
