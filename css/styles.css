@@ -541,13 +541,13 @@
   .step-header {
     grid-template-columns: 25px 1fr 24px;
     grid-template-rows: auto auto;
-    gap: var(--space-3);
+    gap: var(--space-1) var(--space-3);
     padding: var(--space-4);
     align-items: start;
   }
 
   .step-header .step-icon    { grid-column: 1; grid-row: 1; }
-  .step-header h3            { grid-column: 2; grid-row: 1; }
+  .step-header h3            { grid-column: 2; grid-row: 1; font-size: 1.125rem;}
   .step-header p             { grid-column: 2; grid-row: 2; }
   .step-header .step-chevron { grid-column: 3; grid-row: 1; }
   .step-cols {
@@ -558,6 +558,16 @@
   .step-desc { grid-column: 1 / -1; padding-top: var(--space-2); }
   .step-chevron { grid-column: 3; grid-row: 1; }
   .step-panel-content { padding: var(--space-5) var(--space-4) var(--space-6); }
+}
+
+@media (min-width: 1921px) {
+  .steps, .commitment {
+  max-width: 1600px;
+  margin: 0 auto;
+  }
+  .step-cols {
+    max-width: 1400px;
+  }
 }
 
 /* Our commitment card — dark feature card */
@@ -588,7 +598,7 @@
 }
 
 @media (max-width: 768px) {
-  .commitment { align-items: center; padding: var(--space-6); gap: var(--space-4); }
+  .commitment { align-items: center; padding: var(--space-6); gap: var(--space-1); }
   .commitment-icon { width: 35px; height: 35px; }
   .commitment-content {display: contents;}
   .commitment p {grid-column: 1 / -1;}
@@ -598,7 +608,7 @@
 /* ============================================
    SERVICES — home grid (image cards w/ title overlay)
    ============================================ */
-.services-section .section-head { margin-bottom: var(--space-10); }
+.section-head { margin-bottom: var(--space-10); }
 
 .services-grid {
   display: grid;
@@ -697,6 +707,11 @@
   .services-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
+@media (max-width: 678px) {
+  .section-head { margin-bottom: var(--space-4); }
+  .eyebrow { margin-bottom: var(--space-3);}
+}
+
 @media (max-width: 540px) {
   .services-grid { grid-template-columns: 1fr; }
   .service-tile { aspect-ratio: 16 / 9; }
@@ -709,7 +724,6 @@
     transform: translateY(0);
     margin-top: var(--space-2);
   }
-  
   .service-tile .service-tile__arrow {
     opacity: 1;
     transform: translate(0, 0);
