@@ -111,7 +111,7 @@
      - Shows inline success / error without leaving the page.
      ---------------------------- */
   function initForm() {
-    const form = document.querySelector('form[data-netlify="true"]');
+    const form = document.querySelector('form[name="contact"]');
     if (!form) return;
 
     const status = form.querySelector('.form-status');
