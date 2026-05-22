@@ -1206,7 +1206,7 @@ color: var(--color-gray-lighter);
 
 .form-status {
   grid-column: 1 / -1;
-  font-size: var(--text-sm);
+  font-size: var(--text-md);
   font-weight: var(--weight-medium);
   padding: var(--space-3);
   border-radius: var(--radius-sm);
@@ -1214,15 +1214,15 @@ color: var(--color-gray-lighter);
 }
 .form-status.is-success {
   display: block;
-  background: var(--color-white);
+  background: #cffae1;
   color: #077d3a;
   border: 1px solid #63d794;
 }
 .form-status.is-error {
   display: block;
-  background: var(--color-white);
+  background: #ffcfd8;
   color: #b00020;
-  border: 1px solid #b0002078;
+  border: 1px solid #b00020;
 }
 
 .honeypot {
