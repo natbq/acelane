@@ -133,9 +133,9 @@
       const data = new FormData(form);
 
       try {
-        const res = await fetch(window.location.pathname, {
+        const res = await fetch('/', {
           method: 'POST',
-          headers: { 'Accept': 'application/x-www-form-urlencoded' },
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: new URLSearchParams(data).toString()
         });
 
