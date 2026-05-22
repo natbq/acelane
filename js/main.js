@@ -133,7 +133,7 @@
       const data = new FormData(form);
 
       try {
-        const res = await fetch('/', {
+        const res = await fetch(window.location.pathname, {
           method: 'POST',
           headers: { 'Accept': 'application/x-www-form-urlencoded' },
           body: new URLSearchParams(data).toString()
