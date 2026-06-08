@@ -263,7 +263,7 @@
   z-index: 2;
   width: 100%;
 }
-.hero.main .hero-text { max-width: 580px; }
+.hero.main .hero-text { max-width: 560px; }
 .hero-text { max-width: 650px; }
 .hero h1 {
   margin-bottom: var(--space-5);
