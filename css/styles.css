@@ -871,6 +871,11 @@
   filter: grayscale(0);
   transform: scale(1.08);
 }
+@media (max-width: 1440px) {
+  .industry-row p {
+    width: 90%;
+  }
+}
 
 @media (max-width: 1024px) {
   .industry-row {
