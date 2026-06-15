@@ -871,9 +871,9 @@
   filter: grayscale(0);
   transform: scale(1.08);
 }
-@media (max-width: 1440px) {
+@media (max-width: 1400px) {
   .industry-row p {
-    width: 90%;
+    width: 86%;
   }
 }
 
