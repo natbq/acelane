@@ -347,8 +347,8 @@
 .hero-bg {
   background-position: -40rem;
 }
-.hero.main  .hero-text {
-    max-width: 90%;
+.hero.main .hero-text {
+    max-width: 100%;
 }
 .hero--about .hero-bg {
   background-position: center;
