@@ -1286,6 +1286,10 @@ color: var(--color-gray-lighter);
   color: var(--color-orange);
 }
 
+.footer-contact img {
+  width: 18px; height: 20px;
+}
+
 .footer-nav {
   display: flex;
   flex-direction: column;
